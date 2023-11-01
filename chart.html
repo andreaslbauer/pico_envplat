@@ -89,49 +89,53 @@ fetch(url)
     .then(function(data) {
         console.log(data);
         var length = data.length;
-        $('#timeStamp').html(data[length - 1]['DateTime']);
-        $('#currentTemperature').html(data[length - 1]['Temp'].toFixed(2));
-        $('#currentTemperature2').html(data[length - 1]['Temp2'].toFixed(2));
-        $('#currentMoisture').html(data[length - 1]['Moisture']);
-        $('#currentLight').html(data[length - 1]['Light']);
-        $('#currentHumidity').html(data[length - 1]['Humidity'].toFixed(1));
-        $('#currentPressure').html(data[length - 1]['Pressure'].toFixed(2));
+        $('#timeStamp').html(data[length - 1]['D']);
+        $('#currentTemperature').html(data[length - 1]['T1'].toFixed(2));
+        $('#currentTemperature2').html(data[length - 1]['T2'].toFixed(2));
+        $('#currentMoisture').html(data[length - 1]['M']);
+        $('#currentLight').html(data[length - 1]['Li']);
+        $('#currentHumidity').html(data[length - 1]['H'].toFixed(1));
+        $('#currentPressure').html(data[length - 1]['P'].toFixed(2));
         
         for (var i = 0; i < length; i++) {
            var obj = data[i];
-           obj['TimeStamp'] = new Date(Date.parse(obj.DateTime));
-           obj['Value'] = obj['Temp'];
+           obj['TimeStamp'] = new Date(Date.parse(obj.D));
+           obj['Value'] = obj['T1'];
         }
         drawChart("#chartTemp", data);
         
         for (var i = 0; i < length; i++) {
            var obj = data[i];
-           obj['TimeStamp'] = new Date(Date.parse(obj.DateTime));
-           obj['Value'] = obj['Temp2'];
+           obj['TimeStamp'] = new Date(Date.parse(obj.D));
+           obj['Value'] = obj['T2'];
         }
         drawChart("#chartTemp2", data);
 
         for (var i = 0, l = data.length; i < l; i++) {
            var obj = data[i];
-           obj['Value'] = obj['Light'];
+           obj['TimeStamp'] = new Date(Date.parse(obj.D));
+           obj['Value'] = obj['L'];
         }
         drawChart("#chartLight", data);
 
         for (var i = 0, l = data.length; i < l; i++) {
            var obj = data[i];
-           obj['Value'] = obj['Moisture'];
+           obj['TimeStamp'] = new Date(Date.parse(obj.D));
+           obj['Value'] = obj['M'];
         }
         drawChart("#chartMoisture", data);
         
         for (var i = 0, l = data.length; i < l; i++) {
            var obj = data[i];
-           obj['Value'] = obj['Humidity'];
+           obj['TimeStamp'] = new Date(Date.parse(obj.D));
+           obj['Value'] = obj['H'];
         }
         drawChart("#chartHumidity", data);
         
         for (var i = 0, l = data.length; i < l; i++) {
            var obj = data[i];
-           obj['Value'] = obj['Pressure'];
+           obj['TimeStamp'] = new Date(Date.parse(obj.D));
+           obj['Value'] = obj['P'];
         }
         drawChart("#chartPressure", data);
 

@@ -1,3 +1,9 @@
+# Raspberry pi pico Environmental Data Collector
+# requires packages:
+# ssd1306
+# ahtx0
+
+
 from machine import Pin, Timer, WDT, I2C
 import time, utime
 from time import sleep
@@ -34,13 +40,15 @@ wdt = None
 
 
 lock = _thread.allocate_lock()
+keep_running = True
 
 # set up the ring buffers
-shortterm_il = interleaver(3)
+sensor_il = interleaver(4)
+shortterm_il = interleaver(2)
 shortterm_rb = persistedringbuffer(120, "shorttermdata.txt")
 midterm_il = interleaver(60)
 midterm_rb = persistedringbuffer(120, "midtermdata.txt")
-longterm_il = interleaver(10 * 60)
+longterm_il = interleaver(8 * 60)
 longterm_rb = persistedringbuffer(120, "longtermdata.txt")
 
 
@@ -130,7 +138,8 @@ def getSensorData():
 def core2TaskGetTemp():
     
     logger.log("Data collection thread has started")
-    while True:
+    global keep_running
+    while keep_running:
 
         try:
             #logger.log("Aquire data from sensors...")
@@ -139,38 +148,40 @@ def core2TaskGetTemp():
             
             global wdt
             wdt.feed()
-            t = getSensorData()
-            lock.acquire()
-            try:
-                temps = t
-                temp_record = {
-                    't': networking.getTimeDateStr(),
-                    'v': t
-                    }
-                #logger.log("...sensor data has been aquired")
+            
+            global sensor_il
+            if (sensor_il.inc()):
+                t = getSensorData()
+                lock.acquire()
+                try:
+                    temps = t
+                    temp_record = {
+                        't': networking.getTimeDateStr(),
+                        'v': t
+                        }
+                    #logger.log("...sensor data has been aquired")
 
-                if shortterm_il.inc():
-                    shortterm_rb.append(temp_record)
-                    #shortterm_rb.save()
+                    if shortterm_il.inc():
+                        shortterm_rb.append(temp_record)
 
-                if midterm_il.inc():
-                    midterm_rb.append(temp_record)
-                    #midterm_rb.save()
-                    
-                if longterm_il.inc():
-                    longterm_rb.append(temp_record)
-                    #longterm_rb.save()
-                    
-                #logger.log("...sensor data has been stored")
+                    if midterm_il.inc():
+                        midterm_rb.append(temp_record)
+                        
+                    if longterm_il.inc():
+                        longterm_rb.append(temp_record)
+                        
+                    #logger.log(f"Sensor data has been stored: {temp_record}")
 
-            except Exception as e:
-                logger.log(f'Failure collecting sensor data: {e}')
+                except Exception as e:
+                    logger.log(f'Failure collecting sensor data: {e}')
 
-            lock.release()
-            time.sleep(4)
+                lock.release()
+            time.sleep(2)
 
         except Exception as e:
             logger.log(f'Data collection loop failed: {e}')
+            
+    logger.log(f'Data collection thread terminated')
 
 
 
@@ -195,19 +206,20 @@ def webpage_big_display(client):
     webpage_header(client)
     data = shortterm_rb.getcurrent()
     html = f'''
+<meta http-equiv="refresh" content="10">
 <div class="container">
 <h2>
 <table class="table table table-striped ">
   <tr></tr>
   <tr><td>Time</td><td>{data["t"]}</td></tr>
-  <tr><td>Temperature 1</td><td>{data["v"][0]}</td></tr>
-  <tr><td>Temperature 2</td><td> {data["v"][1]}</td></tr>
-  <tr><td>Temperature 3</td><td> {data["v"][4]}</td></tr>
-  <tr><td>Temperature 4<td> {data["v"][6]}</td></tr>
-  <tr><td>Moisture</td><td> {data["v"][2]}</td></tr>
+  <tr><td>Temperature 1</td><td>{round(data["v"][0], 2)}</td></tr>
+  <tr><td>Temperature 2</td><td> {round(data["v"][1], 2)}</td></tr>
+  <tr><td>Temperature 3</td><td> {round(data["v"][4], 2)}</td></tr>
+  <tr><td>Temperature 4<td> {round(data["v"][6], 2)}</td></tr>
+  <tr><td>Moisture</td><td> {round(data["v"][2], 1)}</td></tr>
   <tr><td>Light</td><td> {data["v"][3]}</td></tr>
-  <tr><td>Humidity</td><td> {data["v"][5]}</td></tr> 
-  <tr><td>Pressure</td><td> {data["v"][7]}</td></tr>
+  <tr><td>Humidity</td><td> {round(data["v"][5], 1)}</td></tr> 
+  <tr><td>Pressure</td><td> {round(data["v"][7], 2)}</td></tr>
 </tr>
 </table>
 </h2>
@@ -353,7 +365,7 @@ def sendFile(filename, client):
     logger.log(f"Send file {filename}")
     try:
         with open(filename, "rb") as file:
-            while chunk := file.read(512):
+            while chunk := file.read(1024):
                 client.sendall(chunk)
 
             file.close()
@@ -363,16 +375,14 @@ def sendFile(filename, client):
                 
 
 def serve(connection):
-    #Start a web server
-    state = 'OFF'
+
     pico_led.off()
     temperature = 0
     while True:
         try:
             client = connection.accept()[0]
             request = client.recv(1024)
-            request = str(request)
-            pico_led.on()
+            request = str(request)         
             
             try:
                 request = request.split()[1]
@@ -382,12 +392,15 @@ def serve(connection):
             try:
                 logger.log(f'Got request: {request}')
                 lock.acquire()
+                pico_led.on()
                
                 if request == '/':
                     webpage_main(client)
                 elif request == '/stats':
                     webpage_stats(client)         
                 elif request == '/restart':
+                    global keep_running
+                    keep_running = False
                     logger.log('Resetting controller...')
                     client.send('<html><h3>Controller is restarting</h3></html>')
                     client.close()
@@ -462,6 +475,8 @@ def main():
         serve(connection)
        
     except KeyboardInterrupt:
+        global keep_running
+        keep_running = False
         logger.log("Keyboard interupt")
         if (wlan != None):
             wlan.disconnect()
@@ -474,7 +489,7 @@ def main():
         else:
             logger.log("No connection to close")
             
-        sleep(1)
+        sleep(3)
         logger.log("Resetting controller")
         machine.reset()
              
@@ -487,14 +502,15 @@ def main():
             connection.close()
             logger.log("Connection closed")
         
-        shortterm_rb.save()
-        midterm_rb.save()
-        longterm_rb.save()
-        
-        logger.log("Exiting application")
-        sleep(1)
-        logger.log("Resetting controller")
-        machine.reset()
+    shortterm_rb.save()
+    midterm_rb.save()
+    longterm_rb.save()
+    
+    logger.log("Exiting application")
+    sleep(1)
+    logger.log("Resetting controller")
+    machine.reset()
+    sleep(20)
         
 
 main()

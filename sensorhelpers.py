@@ -189,15 +189,15 @@ class persistedringbuffer:
                         #idx = (idx + 1) % self.capacity
                         data = self.__getitem__(c)
                         r = {}
-                        r['DateTime'] = data['t']
-                        r['Temp'] = data['v'][0]
-                        r['Temp2'] = data['v'][1]
-                        r['Moisture'] = data['v'][2]
-                        r['Light'] = data['v'][3]
-                        r['Temp3'] = data['v'][4]
-                        r['Humidity'] = data['v'][5]
-                        r['Temp4'] = data['v'][6]
-                        r['Pressure'] = data['v'][7]
+                        r['D'] = data['t']
+                        r['T1'] = data['v'][0]
+                        r['T12'] = data['v'][1]
+                        r['M1'] = data['v'][2]
+                        r['L1'] = data['v'][3]
+                        r['T13'] = data['v'][4]
+                        r['H1'] = data['v'][5]
+                        r['T14'] = data['v'][6]
+                        r['P1'] = data['v'][7]
                         l.append(r)
                     
                     except:
@@ -215,15 +215,15 @@ class persistedringbuffer:
                     #print(data)
                     if data != None:
                         r = {}
-                        r['DateTime'] = data['t']
-                        r['Temp'] = data['v'][0]
-                        r['Temp2'] = data['v'][1]
-                        r['Moisture'] = data['v'][2]
-                        r['Light'] = data['v'][3]
-                        r['Temp3'] = data['v'][4]
-                        r['Humidity'] = data['v'][5]
-                        r['Temp4'] = data['v'][6]
-                        r['Pressure'] = data['v'][7]
+                        r['D'] = data['t']
+                        r['T1'] = data['v'][0]
+                        r['T2'] = data['v'][1]
+                        r['M'] = data['v'][2]
+                        r['L'] = data['v'][3]
+                        r['T3'] = data['v'][4]
+                        r['H'] = data['v'][5]
+                        r['T4'] = data['v'][6]
+                        r['P'] = data['v'][7]
                         json = ujson.dumps(r)
                         #print(json)
                         if firstItem == False:
