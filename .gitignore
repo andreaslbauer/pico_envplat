@@ -1,3 +1,9 @@
+# our files to ignore
+midtermdata.txt
+longtermdata.txt
+shorttermdata.txt
+log.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
