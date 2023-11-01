@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><div id="hostname"></div></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shortterm">Table Shortterm</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/midterm">Table Midterm</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/longterm">Table Longterm</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/detailedcharts">Chart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://pifour:5000">PiFour</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://pished:5000">PiShed</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://pibrew:5000">PiBrew</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://picam:5000">PiCam</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+Temperature
+<div id="chartTemp"></div>
+Moisture
+<div id="chartMoisture"></div>
+Light
+<div id="chartLight"></div>
+
+<script>
+
+function drawChart(tag, data) {
+  var viewportWidth  = document.documentElement.clientWidth;
+
+  // set the dimensions and margins of the graph
+  var margin = {top: 10, right: 60, bottom: 30, left: 50},
+      width = viewportWidth - margin.left - margin.right,
+      height = 280 - margin.top - margin.bottom;
+
+  // append the svg object to the body of the page
+  var svg = d3.select(tag)
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+      // Add X axis --> it is a date format
+      var x = d3.scaleTime()
+        .domain(d3.extent(data, function(d) { return d.TimeStamp; }))
+        .range([ 0, width ]);
+      svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x));
+
+      // Add Y axis
+      var y = d3.scaleLinear()
+        .domain([0, d3.max(data, function(d) { return +d.Value; })])
+        .range([ height, 0 ]);
+
+      svg.append("g")
+        .call(d3.axisLeft(y));
+
+      console.log(data);
+
+      // Add the line
+      svg.append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 1.5)
+        .attr("d", d3.line()
+          .x(function(d) { return x(d.TimeStamp) })
+          .y(function(d) { return y(d.Value) })
+          )
+}
+
+
+//Read the data
+var url = "/longtermdata"
+fetch(url)
+    .then(function(response) {
+        var data = response.json();
+        return data
+    })
+    .then(function(data) {
+        //console.log(data);
+        for (var i = 0, l = data.length; i < l; i++) {
+           var obj = data[i];
+           obj['TimeStamp'] = new Date(Date.parse(obj.DateTime));
+           obj['Value'] = obj['Temp'];
+        }
+        drawChart("#chartTemp", data);
+
+        for (var i = 0, l = data.length; i < l; i++) {
+           var obj = data[i];
+           obj['Value'] = obj['Light'];
+        }
+        drawChart("#chartLight", data);
+
+        for (var i = 0, l = data.length; i < l; i++) {
+           var obj = data[i];
+           obj['Value'] = obj['Moisture'];
+        }
+        drawChart("#chartMoisture", data);
+
+    })
+
+</script>
+
+</body>
+</html>

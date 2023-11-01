@@ -1,0 +1,143 @@
+
+<table class="table table-primary">
+    <style>.nobr { white-space: nowrap }</style>
+    <tr>
+        <td td class=nobr>Time: <b><span id="timeStamp">12:34:56</span></b></td>
+        <td td class=nobr>Temp 1: <b><span id="currentTemperature">12:34:56</span></b></td>
+        <td td class=nobr>Temp 2: <b><span id="currentTemperature2">12:34:56</span></b></td>
+        <td td class=nobr>Moisture: <b><span id="currentMoisture"></span></b></td>
+        <td td class=nobr>Light: <b><span id="currentLight"></span></b></td>
+        <td td class=nobr>Humidity: <b><span id="currentHumidity"></span></b></td>
+        <td td class=nobr>Pressure: <b><span id="currentPressure"></span></b></td>
+    </tr>
+</table>
+
+Temperature 1
+<div id="chartTemp"></div>
+Temperature 2
+<div id="chartTemp2"></div>
+Moisture
+<div id="chartMoisture"></div>
+Light
+<div id="chartLight"></div>
+Humidity
+<div id="chartHumidity"></div>
+Pressure
+<div id="chartPressure"></div>
+
+<script>
+
+const urlParams = new URLSearchParams(window.location.search);
+const dataFileName = urlParams.get('f');
+console.log(dataFileName);
+
+function drawChart(tag, data) {
+  var viewportWidth  = document.documentElement.clientWidth;
+
+  // set the dimensions and margins of the graph
+  var margin = {top: 10, right: 60, bottom: 30, left: 50},
+      width = viewportWidth - margin.left - margin.right,
+      height = 180 - margin.top - margin.bottom;
+
+  // append the svg object to the body of the page
+  var svg = d3.select(tag)
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+      // Add X axis --> it is a date format
+      var x = d3.scaleTime()
+        .domain(d3.extent(data, function(d) { return d.TimeStamp; }))
+        .range([ 0, width ]);
+      svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x));
+
+      // Add Y axis
+      var y = d3.scaleLinear()
+        .domain([d3.min(data, function(d) { return +d.Value; }) - 10, d3.max(data, function(d) { return +d.Value; }) + 1])
+        .range([ height, 0 ]);
+
+      svg.append("g")
+        .call(d3.axisLeft(y));
+
+      console.log(data);
+
+      // Add the line
+      svg.append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 1.5)
+        .attr("d", d3.line()
+          .x(function(d) { return x(d.TimeStamp) })
+          .y(function(d) { return y(d.Value) })
+          )
+}
+
+
+//Read the data
+var url = "/" + dataFileName
+fetch(url)
+    .then(function(response) {
+        console.log(response)
+        var data = response.json();
+        return data
+    })
+    .then(function(data) {
+        console.log(data);
+        var length = data.length;
+        $('#timeStamp').html(data[length - 1]['DateTime']);
+        $('#currentTemperature').html(data[length - 1]['Temp'].toFixed(2));
+        $('#currentTemperature2').html(data[length - 1]['Temp2'].toFixed(2));
+        $('#currentMoisture').html(data[length - 1]['Moisture']);
+        $('#currentLight').html(data[length - 1]['Light']);
+        $('#currentHumidity').html(data[length - 1]['Humidity'].toFixed(1));
+        $('#currentPressure').html(data[length - 1]['Pressure'].toFixed(2));
+        
+        for (var i = 0; i < length; i++) {
+           var obj = data[i];
+           obj['TimeStamp'] = new Date(Date.parse(obj.DateTime));
+           obj['Value'] = obj['Temp'];
+        }
+        drawChart("#chartTemp", data);
+        
+        for (var i = 0; i < length; i++) {
+           var obj = data[i];
+           obj['TimeStamp'] = new Date(Date.parse(obj.DateTime));
+           obj['Value'] = obj['Temp2'];
+        }
+        drawChart("#chartTemp2", data);
+
+        for (var i = 0, l = data.length; i < l; i++) {
+           var obj = data[i];
+           obj['Value'] = obj['Light'];
+        }
+        drawChart("#chartLight", data);
+
+        for (var i = 0, l = data.length; i < l; i++) {
+           var obj = data[i];
+           obj['Value'] = obj['Moisture'];
+        }
+        drawChart("#chartMoisture", data);
+        
+        for (var i = 0, l = data.length; i < l; i++) {
+           var obj = data[i];
+           obj['Value'] = obj['Humidity'];
+        }
+        drawChart("#chartHumidity", data);
+        
+        for (var i = 0, l = data.length; i < l; i++) {
+           var obj = data[i];
+           obj['Value'] = obj['Pressure'];
+        }
+        drawChart("#chartPressure", data);
+
+    })
+
+</script>
+
+</body>
+</html>

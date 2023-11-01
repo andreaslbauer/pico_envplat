@@ -1,0 +1,423 @@
+2023-10-31 21:17:44 ############ EnvPlat is starting ############
+2023-10-31 21:17:44 OLED 1306 display found and initialized
+2023-10-31 21:17:44 DS18B20 Sensor found: 2873115704e13c02
+2023-10-31 21:17:44 DS18B20 Sensor found: 28c54c5704e13cce
+2023-10-31 21:17:44 Loaded data file shorttermdata.txt with 120 data rows
+2023-10-31 21:17:44 Loaded data file midtermdata.txt with 45 data rows
+2023-10-31 21:17:44 Loaded data file longtermdata.txt with 44 data rows
+2023-10-31 21:17:47 Waiting for connection... 1
+2023-10-31 21:17:48 Waiting for connection... 2
+2023-10-31 21:17:49 Waiting for connection... 3
+2023-10-31 21:17:50 Wifi Connected on address: 192.168.1.206
+2023-10-31 21:17:50 RTC time: (2023, 10, 31, 1, 21, 17, 50, 0)
+2023-10-31 21:17:50 No need to get time from NTP...
+2023-10-31 21:17:50 Set watchdog with 8s timeout
+2023-10-31 21:17:50 Start data collection thread
+2023-10-31 21:17:50 Data collection thread has started
+2023-10-31 21:17:51 Open network socket
+2023-10-31 21:17:51 Accept web requests
+2023-10-31 21:18:15 Got request: /chart.html?f=longtermdata.txt
+2023-10-31 21:18:15 Send file header.html
+2023-10-31 21:18:15 Send file /chart.html
+2023-10-31 21:18:16 Got request: /longtermdata.txt
+2023-10-31 21:18:24 Got request: /
+2023-10-31 21:18:24 Send file header.html
+2023-10-31 21:18:24 Send file main.html
+2023-10-31 21:18:26 Got request: /chart.html?f=midtermdata.txt
+2023-10-31 21:18:26 Send file header.html
+2023-10-31 21:18:26 Send file /chart.html
+2023-10-31 21:18:26 Got request: /midtermdata.txt
+2023-11-01 07:49:44 Got request: /
+2023-11-01 07:49:44 Send file header.html
+2023-11-01 07:49:44 Send file main.html
+2023-11-01 07:49:45 Got request: /site.webmanifest
+2023-11-01 07:49:45 Send file /site.webmanifest
+2023-11-01 07:49:45 Got request: /site.webmanifest
+2023-11-01 07:49:45 Send file /site.webmanifest
+2023-11-01 07:49:45 Got request: /site.webmanifest
+2023-11-01 07:49:45 Send file /site.webmanifest
+2023-11-01 07:49:46 Got request: /favicon-32x32.png
+2023-11-01 07:49:46 Send file /favicon-32x32.png
+2023-11-01 07:49:46 Got request: /favicon-16x16.png
+2023-11-01 07:49:46 Send file /favicon-16x16.png
+2023-11-01 07:50:23 Got request: b''
+2023-11-01 07:50:23 Send file b''
+2023-11-01 07:50:23 Unable to send file b'': [Errno 2] ENOENT
+2023-11-01 07:50:24 Got request: /bigdisplay
+2023-11-01 07:50:24 Send file header.html
+2023-11-01 07:50:24 Got request: /site.webmanifest
+2023-11-01 07:50:24 Send file /site.webmanifest
+2023-11-01 07:50:24 Got request: /site.webmanifest
+2023-11-01 07:50:24 Send file /site.webmanifest
+2023-11-01 07:50:24 Got request: /site.webmanifest
+2023-11-01 07:50:24 Send file /site.webmanifest
+2023-11-01 07:50:24 Got request: /favicon-16x16.png
+2023-11-01 07:50:24 Send file /favicon-16x16.png
+2023-11-01 07:51:13 Got request: b''
+2023-11-01 07:51:13 Send file b''
+2023-11-01 07:51:13 Unable to send file b'': [Errno 2] ENOENT
+2023-11-01 07:51:14 Got request: /log.txt
+2023-11-01 07:51:14 Send file /log.txt
+2023-11-01 07:51:14 Got request: /favicon.ico
+2023-11-01 07:51:14 Send file /favicon.ico
+2023-11-01 07:51:15 Got request: /favicon.ico
+2023-11-01 07:51:15 Send file /favicon.ico
+2023-11-01 07:51:15 Got request: /favicon.ico
+2023-11-01 07:51:15 Send file /favicon.ico
+2023-11-01 08:20:53 Got request: /
+2023-11-01 08:20:53 Send file header.html
+2023-11-01 08:20:53 Unable to clear OLED: [Errno 110] ETIMEDOUT
+2023-11-01 08:20:54 Send file main.html
+2023-11-01 08:20:56 Got request: /stats
+2023-11-01 08:20:56 Send file header.html
+2023-11-01 08:21:01 Got request: /
+2023-11-01 08:21:01 Send file header.html
+2023-11-01 08:21:01 Send file main.html
+2023-11-01 08:21:04 Got request: /chart.html?f=longtermdata.txt
+2023-11-01 08:21:04 Send file header.html
+2023-11-01 08:21:04 Send file /chart.html
+2023-11-01 08:21:04 Got request: /longtermdata.txt
+2023-11-01 08:21:08 Got request: /
+2023-11-01 08:21:08 Send file header.html
+2023-11-01 08:21:08 Send file main.html
+2023-11-01 08:21:10 Got request: /chart.html?f=longtermdata.txt
+2023-11-01 08:21:10 Send file header.html
+2023-11-01 08:21:10 Send file /chart.html
+2023-11-01 08:21:11 Got request: /longtermdata.txt
+2023-11-01 08:21:33 Got request: /
+2023-11-01 08:21:33 Send file header.html
+2023-11-01 08:21:33 Send file main.html
+2023-11-01 08:21:49 Got request: /chart.html?f=longtermdata.txt
+2023-11-01 08:21:49 Send file header.html
+2023-11-01 08:21:49 Send file /chart.html
+2023-11-01 08:21:50 Got request: /longtermdata.txt
+2023-11-01 08:22:21 Got request: /
+2023-11-01 08:22:21 Send file header.@“’
+2023-11-01 08:22:21 Send file main.html
+2023-11-01 08:22:24 Got request: /longtermdata.txt
+2023-11-01 08:22:24 Got request: /site.webmanifest
+2023-11-01 08:22:24 Send file /site.webmanifest
+2023-11-01 08:22:34 Got request: /chart.html?f=longtermdata.txt
+2023-11-01 08:22:34 Send file header.html
+2023-11-01 08:22:34 Send file /chart.html
+2023-11-01 08:22:34 Got request: /longtermdata.txt
+2023-11-01 08:23:25 Got request: /chart.html?f=midtermdata.txt
+2023-11-01 08:23:25 Send file header.html
+2023-11-01 08:23:25 Send file /chart.html
+2023-11-01 08:23:26 Got request: /midtermdata.txt
+2023-11-01 08:23:52 Got request: /
+2023-11-01 08:23:52 Send file header.html
+2023-11-01 08:23:52 Send file main.html
+2023-11-01 08:23:54 Got request: /chart.html?f=longtermdata.txt
+2023-11-01 08:23:54 Send file header.html
+2023-11-01 08:23:54 Send file /chart.html
+2023-11-01 08:23:54 Got request: /longtermdata.txt
+2023-11-01 08:24:10 Got request: /
+2023-11-01 08:24:10 Send file header.html
+2023-11-01 08:24:10 Send file main.html
+2023-11-01 08:24:11 Got request: /stats
+2023-11-01 08:24:11 Send file header.html
+2023-11-01 08:24:20 Got request: /
+2023-11-01 08:24:20 Send file header.html
+2023-11-01 08:24:20 Send file main.html
+2023-11-01 08:24:22 Got request: /bigdisplay
+2023-11-01 08:24:22 Send file header.html
+2023-11-01 08:24:42 Got request: /
+2023-11-01 08:24:42 Send file header.html
+2023-11-01 08:24:42 Send file main.html
+2023-11-01 08:24:42 Unable to print to OLED: M: 59.73 1024
+2023-11-01 08:24:54 Got request: /chart.html?f=shorttermdata.txt
+2023-11-01 08:24:54 Send file header.html
+2023-11-01 08:24:54 Send file /chart.html
+2023-11-01 08:24:55 Got request: /shorttermdata.txt
+2023-11-01 08:25:05 Got request: /site.webmanifest
+2023-11-01 08:25:05 Send file /site.webmanifest
+2023-11-01 08:25:16 Got request: /
+2023-11-01 08:25:16 Send file header.html
+2023-11-01 08:25:16 Send file main.html
+2023-11-01 08:25:19 Got request: /shorttermdata.txt
+2023-11-01 08:25:44 Got request: /chart.html?f=shorttermdata.txt
+2023-11-01 08:25:44 Send file header.html
+2023-11-01 08:25:44 Send file /chart.html
+2023-11-01 08:25:45 Got request: /shorttermdata.txt
+2023-11-01 08:26:07 Got request: /
+2023-11-01 08:26:07 Send file header.html
+2023-11-01 08:26:07 Send file main.html
+2023-11-01 08:26:26 Got request: /bigdisplay
+2023-11-01 08:26:26 Send file header.html
+2023-11-01 08:42:43 Got request: b''
+2023-11-01 08:42:43 Send file b''
+2023-11-01 08:42:44 Unable to send file b'': [Errno 2] ENOENT
+2023-11-01 09:21:37 Keyboard interupt
+2021-01-01 00:00:04 ############ EnvPlat is starting ############
+2021-01-01 00:00:04 OLED 1306 display found and initialized
+2021-01-01 00:00:04 DS18B20 Sensor found: 2873115704e13c02
+2021-01-01 00:00:04 DS18B20 Sensor found: 28c54c5704e13cce
+2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 120 data rows
+2021-01-01 00:00:05 Loaded data file midtermdata.txt with 45 data rows
+2021-01-01 00:00:05 Loaded data file longtermdata.txt with 44 data rows
+2021-01-01 00:00:07 Waiting for connection... 1
+2021-01-01 00:00:09 Waiting for connection... 2
+2021-01-01 00:00:10 Waiting for connection... 3
+2021-01-01 00:00:11 Wifi Connected on address: 192.168.1.206
+2021-01-01 00:00:11 RTC time: (2021, 1, 1, 4, 0, 0, 11, 0)
+2021-01-01 00:00:11 Attempt to get time from pool.ntp.org
+2021-01-01 00:00:17 Unable to get time from NTP server: [Errno 110] ETIMEDOUT
+2021-01-01 00:00:18 Attempt to get time from 216.229.4.66
+2021-01-01 00:00:24 Unable to get time from NTP server: [Errno 110] ETIMEDOUT
+2021-01-01 00:00:25 Attempt to get time from 0.pool.ntp.org
+2023-11-01 09:28:57 Clock set from NTP at 0.pool.ntp.org, time is: 09:28:57
+2023-11-01 09:28:58 Set watchdog with 8s timeout
+2023-11-01 09:28:58 Start data collection thread
+2023-11-01 09:28:58 Data collection thread has started
+2023-11-01 09:28:59 Open network socket
+2023-11-01 09:28:59 Accept web requests
+2023-11-01 09:29:44 Keyboard interupt
+2023-11-01 09:29:44 Connection closed
+2021-01-01 00:00:04 ############ EnvPlat is starting ############
+2021-01-01 00:00:04 OLED 1306 display found and initialized
+2021-01-01 00:00:04 DS18B20 Sensor found: 2873115704e13c02
+2021-01-01 00:00:04 DS18B20 Sensor found: 28c54c5704e13cce
+2021-01-01 00:00:05 Unable to load data file shorttermdata.txt: syntax error in JSON
+2021-01-01 00:00:05 Loaded data file midtermdata.txt with 45 data rows
+2021-01-01 00:00:05 Loaded data file longtermdata.txt with 44 data rows
+2021-01-01 00:00:07 Waiting for connection... 1
+2021-01-01 00:00:08 Waiting for connection... 2
+2021-01-01 00:00:09 Waiting for connection... 3
+2021-01-01 00:00:10 Wifi Connected on address: 192.168.1.206
+2021-01-01 00:00:11 RTC time: (2021, 1, 1, 4, 0, 0, 11, 0)
+2021-01-01 00:00:11 Attempt to get time from pool.ntp.org
+2023-11-01 09:30:07 Clock set from NTP at pool.ntp.org, time is: 09:30:07
+2023-11-01 09:30:08 Set watchdog with 8s timeout
+2023-11-01 09:30:08 Start data collection thread
+2023-11-01 09:30:08 Data collection thread has started
+2023-11-01 09:30:09 Open network socket
+2023-11-01 09:30:09 Accept web requests
+2023-11-01 09:30:16 Keyboard interupt
+2023-11-01 09:30:16 Unable to print to OLED: M: 59.41 688
+2021-01-01 00:00:04 ############ EnvPlat is starting ############
+2021-01-01 00:00:04 OLED 1306 display found and initialized
+2021-01-01 00:00:04 DS18B20 Sensor found: 2873115704e13c02
+2021-01-01 00:00:04 DS18B20 Sensor found: 28c54c5704e13cce
+2021-01-01 00:00:05 Unable to load data file shorttermdata.txt: syntax error in JSON
+2021-01-01 00:00:05 Loaded data file midtermdata.txt with 45 data rows
+2021-01-01 00:00:05 Loaded data file longtermdata.txt with 44 data rows
+2021-01-01 00:00:07 Waiting for connection... 1
+2021-01-01 00:00:08 Waiting for connection... 2
+2021-01-01 00:00:09 Waiting for connection... 3
+2021-01-01 00:00:10 Wifi Connected on address: 192.168.1.206
+2021-01-01 00:00:11 RTC time: (2021, 1, 1, 4, 0, 0, 11, 0)
+2021-01-01 00:00:11 Attempt to get time from pool.ntp.org
+2023-11-01 09:31:22 Clock set from NTP at pool.ntp.org, time is: 09:31:22
+2023-11-01 09:31:23 Set watchdog with 8s timeout
+2023-11-01 09:31:23 Start data collection thread
+2023-11-01 09:31:23 Data collection thread has started
+2023-11-01 09:31:24 Open network socket
+2023-11-01 09:31:24 Accept web requests
+2023-11-01 09:31:24 Got request: /
+2023-11-01 09:31:24 Send file header.html
+2023-11-01 09:31:25 Send file main.html
+2023-11-01 09:31:49 Got request: /restart
+2023-11-01 09:31:49 Resetting controller...
+2021-01-01 00:00:04 ############ EnvPlat is starting ############
+2021-01-01 00:00:04 OLED 1306 display found and initialized
+2021-01-01 00:00:04 DS18B20 Sensor found: 2873115704e13c02
+2021-01-01 00:00:04 DS18B20 Sensor found: 28c54c5704e13cce
+2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 2 data rows
+2021-01-01 00:00:05 Loaded data file midtermdata.txt with 46 data rows
+2021-01-01 00:00:05 Loaded data file longtermdata.txt with 45 data rows
+2021-01-01 00:00:07 Waiting for connection... 1
+2021-01-01 00:00:08 Waiting for connection... 2
+2021-01-01 00:00:09 Waiting for connection... 3
+2021-01-01 00:00:10 Wifi Connected on address: 192.168.1.206
+2021-01-01 00:00:11 RTC time: (2021, 1, 1, 4, 0, 0, 11, 0)
+2021-01-01 00:00:11 Attempt to get time from pool.ntp.org
+2021-01-01 00:00:17 Unable to get time from NTP server: [Errno 110] ETIMEDOUT
+2021-01-01 00:00:18 Attempt to get time from 216.229.4.66
+2023-11-01 09:32:09 Clock set from NTP at 216.229.4.66, time is: 09:32:09
+2023-11-01 09:32:10 Set watchdog with 8s timeout
+2023-11-01 09:32:10 Start data collection thread
+2023-11-01 09:32:10 Data collection thread has started
+2023-11-01 09:32:10 Keyboard interupt
+2023-11-01 09:33:10 ############ EnvPlat is starting ############
+2023-11-01 09:33:10 OLED 1306 display found and initialized
+2023-11-01 09:33:10 DS18B20 Sensor found: 2873115704e13c02
+2023-11-01 09:33:10 DS18B20 Sensor found: 28c54c5704e13cce
+2023-11-01 09:33:10 Loaded data file shorttermdata.txt with 2 data rows
+2023-11-01 09:33:10 Unable to load data file midtermdata.txt: syntax error in JSON
+2023-11-01 09:33:10 Loaded data file longtermdata.txt with 45 data rows
+2023-11-01 09:33:12 Wifi Connected on address: 192.168.1.206
+2023-11-01 09:33:13 RTC time: (2023, 11, 1, 2, 9, 33, 13, 0)
+2023-11-01 09:33:13 No need to get time from NTP...
+2023-11-01 09:33:13 Set watchdog with 8s timeout
+2023-11-01 09:33:13 Start data collection thread
+2023-11-01 09:33:13 Data collection thread has started
+2023-11-01 09:33:14 Open network socket
+2023-11-01 09:33:14 Accept web requests
+2023-11-01 09:33:19 Got request: /
+2023-11-01 09:33:19 Send file header.html
+2023-11-01 09:33:20 Send file main.html
+2023-11-01 09:33:20 Got request: /favicon-32x32.png
+2023-11-01 09:33:20 Send file /favicon-32x32.png
+2023-11-01 09:33:29 Got request: /restart
+2023-11-01 09:33:29 Resetting controller...
+2023-11-01 09:33:57 ############ EnvPlat is starting ############
+2023-11-01 09:33:57 OLED 1306 display found and initialized
+2023-11-01 09:33:57 DS18B20 Sensor found: 2873115704e13c02
+2023-11-01 09:33:57 DS18B20 Sensor found: 28c54c5704e13cce
+2023-11-01 09:33:57 Loaded data file shorttermdata.txt with 3 data rows
+2023-11-01 09:33:58 Loaded data file midtermdata.txt with 1 data rows
+2023-11-01 09:33:58 Loaded data file longtermdata.txt with 46 data rows
+2023-11-01 09:34:00 Waiting for connection... 1
+2023-11-01 09:34:01 Waiting for connection... 2
+2023-11-01 09:34:02 Waiting for connection... 3
+2023-11-01 09:34:03 Wifi Connected on address: 192.168.1.206
+2023-11-01 09:34:03 RTC time: (2023, 11, 1, 2, 9, 34, 3, 0)
+2023-11-01 09:34:04 No need to get time from NTP...
+2023-11-01 09:34:04 Set watchdog with 8s timeout
+2023-11-01 09:34:04 Start data collection thread
+2023-11-01 09:34:04 Data collection thread has started
+2023-11-01 09:34:05 Open network socket
+2023-11-01 09:34:05 Accept web requests
+2023-11-01 09:34:25 Got request: /log.txt
+2023-11-01 09:34:26 Send file /log.txt
+2023-11-01 09:34:36 Got request: /chart.html?f=longtermdata.txt
+2023-11-01 09:34:36 Send file header.html
+2023-11-01 09:34:36 Send file /chart.html
+2023-11-01 09:34:36 Got request: /longtermdata.txt
+2023-11-01 09:35:08 Got request: /
+2023-11-01 09:35:08 Send file header.html
+2023-11-01 09:35:08 Send file main.html
+2023-11-01 09:35:10 Got request: /longtermdata.txt
+2023-11-01 09:35:16 Got request: /longtermdata.txt
+2023-11-01 09:35:16 Unable to print to OLED: H: 88.9 1001.54
+2023-11-01 09:35:16 Got request: /favicon.ico
+2023-11-01 09:35:16 Send file /favicon.ico
+2023-11-01 09:35:32 Got request: /longtermdata.txt
+2023-11-01 09:35:32 Got request: /favicon.ico
+2023-11-01 09:35:33 Send file /favicon.ico
+2023-11-01 09:36:05 Got request: /longtermdata.txt
+2023-11-01 09:36:05 Got request: /favicon.ico
+2023-11-01 09:36:05 Send file /favicon.ico
+2023-11-01 09:36:08 Got request: /longtermdata.txt
+2023-11-01 09:36:08 Got request: /favicon.ico
+2023-11-01 09:36:08 Send file /favicon.ico
+2023-11-01 09:36:09 Got request: /longtermdata.txt
+2023-11-01 09:36:10 Got request: /favicon.ico
+2023-11-01 09:36:10 Send file /favicon.ico
+2023-11-01 09:36:14 Got request: /longtermdata.txt
+2023-11-01 09:36:14 Got request: /favicon.ico
+2023-11-01 09:36:14 Send file /favicon.ico
+2023-11-01 09:36:17 Got request: /longtermdata.txt
+2023-11-01 09:36:17 Got request: /favicon.ico
+2023-11-01 09:36:17 Send file /favicon.ico
+2023-11-01 09:36:24 Got request: /longtermdata.txt
+2023-11-01 09:36:24 Got request: /favicon.ico
+2023-11-01 09:36:24 Send file /favicon.ico
+2023-11-01 09:36:26 Got request: /longtermdata.txt
+2023-11-01 09:36:26 Got request: /favicon.ico
+2023-11-01 09:36:26 Send file /favicon.ico
+2023-11-01 09:36:32 Got request: /site.webmanifest
+2023-11-01 09:36:32 Send file /site.webmanifest
+2023-11-01 09:36:32 Unable to print to OLED: M: 59.51 688
+2023-11-01 09:36:34 Got request: /chart.html?f=longtermdata.txt
+2023-11-01 09:36:“4 Send file header.html
+2023-11-01 09:36:34 Send file /chart.html
+2023-11-01 09:36:34 Got request: /longtermdata.txt
+2023-11-01 09:36:48 Got request: /
+2023-11-01 09:36:49 Send file header.html
+2023-11-01 09:36:49 Send file main.html
+2023-11-01 09:36:51 Got request: /longtermdata.txt
+2023-11-01 09:37:51 Got request: b''
+2023-11-01 09:37:51 Send file b''
+2023-11-01 09:37:51 Unable to send file b'': [Errno 2] ENOENT
+2023-11-01 09:38:58 Got request: /site.webmanifest
+2023-11-01 09:38:58 Send file /site.webmanifest
+2023-11-01 09:38:58 Unable to print to OLED: At: 09:38:58
+2023-11-01 09:39:00 Got request: /stats
+2023-11-01 09:39:00 Send file header.html
+2023-11-01 09:39:02 Got request: /
+2023-11-01 09:39:02 Send file header.html
+2023-11-01 09:39:02 Send file main.html
+2023-11-01 09:39:05 Got request: /restart
+2023-11-01 09:39:05 Resetting controller...
+2023-11-01 09:40:43 ############ EnvPlat is starting ############
+2023-11-01 09:40:43 OLED 1306 display found and initialized
+2023-11-01 09:40:43 DS18B20 Sensor found: 2873115704e13c02
+2023-11-01 09:40:43 DS18B20 Sensor found: 28c54c5704e13cce
+2023-11-01 09:40:44 Loaded data file shorttermdata.txt with 19 data rows
+2023-11-01 09:40:44 Loaded data file midtermdata.txt with 2 data rows
+2023-11-01 09:40:44 Loaded data file longtermdata.txt with 47 data rows
+2023-11-01 09:40:46 Waiting for connection... 1
+2023-11-01 09:40:47 Waiting for connection... 2
+2023-11-01 09:40:48 Waiting for connection... 3
+2023-11-01 09:40:49 Wifi Connected on address: 192.168.1.206
+2023-11-01 09:40:50 RTC time: (2023, 11, 1, 2, 9, 40, 50, 0)
+2023-11-01 09:40:50 No need to get time from NTP...
+2023-11-01 09:40:50 Set watchdog with 8s timeout
+2023-11-01 09:40:50 Start data collection thread
+2023-11-01 09:40:50 Data collection thread has started
+2023-11-01 09:40:51 Open network socket
+2023-11-01 09:40:51 Accept web requests
+2023-11-01 09:40:57 Got request: /log.txt
+2023-11-01 09:40:57 Send file /log.txt
+2023-11-01 09:41:08 Got request: /bigdisplay
+2023-11-01 09:41:08 Send file header.html
+2023-11-01 09:41:13 Got request: /
+2023-11-01 09:41:13 Send file header.html
+2023-11-01 09:41:13 Send file main.html
+2023-11-01 09:41:22 Got request: /longtermdata.txt
+2023-11-01 09:41:25 Got request: /longtermdata.txt
+2023-11-01 09:41:25 Got request: /favicon.ico
+2023-11-01 09:41:25 Send file /favicon.ico
+2023-11-01 09:41:26 Got request: /longtermdata.txt
+2023-11-01 09:41:27 Got request: /favicon.ico
+2023-11-01 09:41:27 Send file /favicon.ico
+2023-11-01 09:41:51 Got request: /longtermdata.txt
+2023-11-01 09:41:51 Got request: /longtermdata.txt
+2021-01-01 00:00:04 ############ EnvPlat is starting ############
+2021-01-01 00:00:04 OLED 1306 display found and initialized
+2021-01-01 00:00:05 DS18B20 Sensor found: 2873115704e13c02
+2021-01-01 00:00:05 DS18B20 Sensor found: 28c54c5704e13cce
+2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 19 data rows
+2021-01-01 00:00:05 Loaded data file midtermdata.txt with 2 data rows
+2021-01-01 00:00:05 Loaded data file longtermdata.txt with 47 data rows
+2021-01-01 00:00:07 Waiting for connection... 1
+2021-01-01 00:00:08 Waiting for connection... 2
+2021-01-01 00:00:09 Waiting for connection... 3
+2021-01-01 00:00:11 Waiting for connection... 4
+2021-01-01 00:00:12 Waiting for connection... 5
+2021-01-01 00:00:13 Wifi Connected on address: 192.168.1.206
+2021-01-01 00:00:13 RTC time: (2021, 1, 1, 4, 0, 0, 13, 0)
+2021-01-01 00:00:13 Attempt to get time from pool.ntp.org
+2021-01-01 00:00:19 Unable to get time from NTP server: [Errno 110] ETIMEDOUT
+2021-01-01 00:00:20 Attempt to get time from 216.229.4.66
+2023-11-01 11:38:21 Clock set from NTP at 216.229.4.66, time is: 11:38:21
+2023-11-01 11:38:22 Set watchdog with 8s timeout
+2023-11-01 11:38:22 Start data collection thread
+2023-11-01 11:38:22 Data collection thread has started
+2023-11-01 11:38:23 Open network socket
+2023-11-01 11:38:23 Accept web requests
+2021-01-01 00:00:04 ############ EnvPlat is starting ############
+2021-01-01 00:00:04 OLED 1306 display found and initialized
+2021-01-01 00:00:04 DS18B20 Sensor found: 2873115704e13c02
+2021-01-01 00:00:05 DS18B20 Sensor found: 28c54c5704e13cce
+2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 19 data rows
+2021-01-01 00:00:05 Loaded data file midtermdata.txt with 2 data rows
+2021-01-01 00:00:05 Loaded data file longtermdata.txt with 47 data rows
+2021-01-01 00:00:07 Waiting for connection... 1
+2021-01-01 00:00:08 Waiting for connection... 2
+2021-01-01 00:00:09 Waiting for connection... 3
+2021-01-01 00:00:10 Wifi Connected on address: 192.168.1.206
+2021-01-01 00:00:11 RTC time: (2021, 1, 1, 4, 0, 0, 11, 0)
+2021-01-01 00:00:11 Attempt to get time from pool.ntp.org
+2021-01-01 00:00:17 Unable to get time from NTP server: [Errno 110] ETIMEDOUT
+2021-01-01 00:00:18 Attempt to get time from 216.229.4.66
+2023-11-01 11:50:31 Clock set from NTP at 216.229.4.66, time is: 11:50:31
+2023-11-01 11:50:32 Set watchdog with 8s timeout
+2023-11-01 11:50:32 Start data collection thread
+2023-11-01 11:50:32 Data collection thread has started
+2023-11-01 11:50:33 Open network socket
+2023-11-01 11:50:33 Accept web requests
+2023-11-01 11:53:14 Keyboard interupt
+2023-11-01 11:53:14 Connection closed
