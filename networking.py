@@ -49,7 +49,7 @@ def open_socket(ip):
     address = (ip, 80)
     connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     connection.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    connection.settimeout(3.0)
+    connection.settimeout(120.0)
     connection.bind(address)
     connection.listen(3)
     return connection

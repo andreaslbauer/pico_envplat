@@ -111,14 +111,10 @@ def getSensorData():
     oled.print("M: " + str(moisture) + " " + str(brightness), i + 1)
     oled.print("H: " + str(round(relative_humidity, 1)) + " " + str(round(pressure, 2)), i + 2)
     oled.print("H: " + str(round(temp3, 2)) + " " + str(round(temp4, 2)), i + 3)
-    
-    if 1 == 1:
-        gc.collect()
-        gc.threshold(gc.mem_free() // 4 + gc.mem_alloc())
         
     global prev_mem_free
     mem_free = gc.mem_free()
-    logger.log(f'Memory free: {mem_free} diff: {mem_free - prev_mem_free}')
+    #logger.log(f'Memory free: {mem_free} diff: {mem_free - prev_mem_free}')
     prev_mem_free = mem_free
     
     # if we are running out of memory - restart
@@ -390,10 +386,13 @@ def serve(connection):
                 pico_led.on()
                
                 if request == '/':
+                    client.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\nAccess-Control-Allow-Origin: *\r\n\r\n')
                     webpage_main(client)
                 elif request == '/stats':
+                    client.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\nAccess-Control-Allow-Origin: *\r\n\r\n')
                     webpage_stats(client)         
                 elif request == '/restart':
+                    client.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\nAccess-Control-Allow-Origin: *\r\n\r\n')
                     global keep_running
                     keep_running = False
                     logger.log('Resetting controller...')
@@ -409,20 +408,26 @@ def serve(connection):
                     machine.reset()
                     sleep(5)
                 elif request == "/bigdisplay":
+                    client.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\nAccess-Control-Allow-Origin: *\r\n\r\n')
                     webpage_big_display(client)
                 elif request == '/metrics':
+                    client.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\nAccess-Control-Allow-Origin: *\r\n\r\n')
                     webpage_metrics(client)
                 elif request == '/shorttermdata.txt':
+                    client.send('HTTP/1.0 200 OK\r\nContent-type: application/json\r\nAccess-Control-Allow-Origin: *\r\n\r\n')
                     shortterm_rb.d3json(client)
                 elif request == '/midtermdata.txt':
+                    client.send('HTTP/1.0 200 OK\r\nContent-type: application/json\r\nAccess-Control-Allow-Origin: *\r\n\r\n')
                     midterm_rb.d3json(client)
                 elif request == '/longtermdata.txt':
+                    client.send('HTTP/1.0 200 OK\r\nContent-type: application/json\r\nAccess-Control-Allow-Origin: *\r\n\r\n')
                     longterm_rb.d3json(client)
                 elif request == b'':
                     logger.log(f'Received invalid request {request}')
                 else:
                     filename = request.split('?')[0]
                     if filename == '/chart.html':
+                        client.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\nAccess-Control-Allow-Origin: *\r\n\r\n')
                         sendFile('header.html', client)
                         sendFile(filename, client)
                     else:
@@ -437,7 +442,8 @@ def serve(connection):
             pico_led.off()
 
         except Exception as e:
-            logger.log(f'Failure handling web request: {e}')
+            #logger.log(f'Failure handling web request: {e}')
+            pass
 
 def main():
     # main loop
