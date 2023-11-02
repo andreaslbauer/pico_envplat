@@ -455,7 +455,6 @@ def main():
         oled.print("Get NTP time", 1)
         networking.set_clock_from_ntp()
         oled.print(networking.getTimeStr(), 2)
-        #sleep(1)
         logger.log("Set watchdog with 8s timeout")
         global wdt
         wdt = WDT(timeout = 8000)
