@@ -13,7 +13,6 @@ import ahtx0
 import network
 import socket
 from picozero import pico_temp_sensor, pico_led
-import _thread
 import networking
 from networking import connect
 import gc, os, machine
@@ -38,12 +37,11 @@ bmp.use_case(BMP280_CASE_INDOOR)
 sensor_count = temp_sensor.sensor_count() + 2
 wdt = None
 
-
-lock = _thread.allocate_lock()
 keep_running = True
 
 # set up the ring buffers
 sensor_il = interleaver(4)
+savedata_il = interleaver(10)
 shortterm_il = interleaver(2)
 shortterm_rb = persistedringbuffer(120, "shorttermdata.txt")
 midterm_il = interleaver(60)
@@ -120,7 +118,7 @@ def getSensorData():
         
     global prev_mem_free
     mem_free = gc.mem_free()
-    #logger.log(f'Memory free: {mem_free} diff: {mem_free - prev_mem_free}')
+    logger.log(f'Memory free: {mem_free} diff: {mem_free - prev_mem_free}')
     prev_mem_free = mem_free
     
     # if we are running out of memory - restart
@@ -135,31 +133,28 @@ def getSensorData():
     
     return list
 
-def core2TaskGetTemp():
+def collectSensorData(timer):
     
-    logger.log("Data collection thread has started")
     global keep_running
-    while keep_running:
+    if keep_running:
 
         try:
-            #logger.log("Aquire data from sensors...")
-            #gc.collect()
-            #gc.threshold(gc.mem_free() // 4 + gc.mem_alloc())
+            gc.collect()
+            gc.threshold(gc.mem_free() // 4 + gc.mem_alloc())
             
             global wdt
             wdt.feed()
             
             global sensor_il
             if (sensor_il.inc()):
+                #logger.log("Aquire data from sensors...")
                 t = getSensorData()
-                lock.acquire()
                 try:
                     temps = t
                     temp_record = {
                         't': networking.getTimeDateStr(),
                         'v': t
                         }
-                    #logger.log("...sensor data has been aquired")
 
                     if shortterm_il.inc():
                         shortterm_rb.append(temp_record)
@@ -170,18 +165,20 @@ def core2TaskGetTemp():
                     if longterm_il.inc():
                         longterm_rb.append(temp_record)
                         
+                    if savedata_il.inc():
+                        shortterm_rb.save()
+                        midterm_rb.save()
+                        longterm_rb.save()
+                        logger.log(f"Sensor data has been save to FS: {temp_record}")
+                                                
                     #logger.log(f"Sensor data has been stored: {temp_record}")
 
                 except Exception as e:
                     logger.log(f'Failure collecting sensor data: {e}')
 
-                lock.release()
-            time.sleep(2)
-
         except Exception as e:
-            logger.log(f'Data collection loop failed: {e}')
-            
-    logger.log(f'Data collection thread terminated')
+            logger.log(f'Data collection failed: {e}')
+        
 
 
 
@@ -362,7 +359,6 @@ def webpage_metrics(client):
         render_table(client, data_table)
 
 def sendFile(filename, client):
-    logger.log(f"Send file {filename}")
     try:
         with open(filename, "rb") as file:
             while chunk := file.read(1024):
@@ -391,7 +387,6 @@ def serve(connection):
            
             try:
                 logger.log(f'Got request: {request}')
-                lock.acquire()
                 pico_led.on()
                
                 if request == '/':
@@ -410,7 +405,7 @@ def serve(connection):
                     longterm_rb.save()
             
                     pico_led.off()
-                    sleep(1)
+                    sleep(5)
                     machine.reset()
                     sleep(5)
                 elif request == "/bigdisplay":
@@ -440,7 +435,6 @@ def serve(connection):
                 client.close()
                 
             pico_led.off()
-            lock.release()
 
         except Exception as e:
             logger.log(f'Failure handling web request: {e}')
@@ -467,8 +461,7 @@ def main():
         wdt = WDT(timeout = 8000)
         logger.log("Start data collection thread")
         gc.collect()
-        _thread.start_new_thread(core2TaskGetTemp, ())
-        sleep(1)
+        timer = Timer(mode=Timer.PERIODIC, period = 4000, callback = collectSensorData)
         logger.log("Open network socket")
         connection = networking.open_socket(ip)
         logger.log("Accept web requests")

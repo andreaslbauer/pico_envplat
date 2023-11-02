@@ -1,449 +1,266 @@
-2023-11-01 14:23:07 ############ EnvPlat is starting ############
-2023-11-01 14:23:07 OLED 1306 display found and initialized
-2023-11-01 14:23:07 DS18B20 Sensor found: 28cd215704e13c92
-2023-11-01 14:23:07 DS18B20 Sensor found: 2849675704e13cd1
-2023-11-01 14:23:07 Loaded data file shorttermdata.txt with 32 data rows
-2023-11-01 14:23:07 Loaded data file midtermdata.txt with 11 data rows
-2023-11-01 14:23:07 Loaded data file longtermdata.txt with 6 data rows
-2023-11-01 14:23:10 Waiting for connection... 1
-2023-11-01 14:23:11 Waiting for connection... 2
-2023-11-01 14:23:12 Waiting for connection... 3
-2023-11-01 14:23:13 Waiting for connection... 4
-2023-11-01 14:23:14 Waiting for connection... 5
-2023-11-01 14:23:15 Waiting for connection... 6
-2023-11-01 14:23:16 Waiting for connection... 7
-2023-11-01 14:23:17 Waiting for connection... 8
-2023-11-01 14:23:18 Waiting for connection... 9
-2023-11-01 14:23:21 Waiting for connection... 1
-2023-11-01 14:23:22 Waiting for connection... 2
-2023-11-01 14:23:23 Waiting for connection... 3
-2023-11-01 14:23:25 Waiting for connection... 4
-2023-11-01 14:23:26 Waiting for connection... 5
-2023-11-01 14:23:27 Waiting for connection... 6
-2023-11-01 14:23:28 Waiting for connection... 7
-2023-11-01 14:23:29 Waiting for connection... 8
-2023-11-01 14:23:30 Waiting for connection... 9
-2023-11-01 14:23:33 Waiting for connection... 1
-2023-11-01 14:23:34 Waiting for connection... 2
-2023-11-01 14:23:35 Waiting for connection... 3
-2023-11-01 14:23:36 Waiting for connection... 4
-2023-11-01 14:23:37 Waiting for connection... 5
-2023-11-01 14:23:38 Waiting for connection... 6
-2023-11-01 14:23:39 Waiting for connection... 7
-2023-11-01 14:23:40 Waiting for connection... 8
-2023-11-01 14:23:41 Waiting for connection... 9
-2023-11-01 14:23:44 Waiting for connection... 1
-2023-11-01 14:23:45 Waiting for connection... 2
-2023-11-01 14:23:46 Waiting for connection... 3
-2023-11-01 14:23:48 Waiting for connection... 4
-2023-11-01 14:23:49 Waiting for connection... 5
-2023-11-01 14:23:50 Waiting for connection... 6
-2023-11-01 14:23:51 Waiting for connection... 7
-2023-11-01 14:23:52 Waiting for connection... 8
-2023-11-01 14:23:53 Waiting for connection... 9
-2023-11-01 14:23:56 Waiting for connection... 1
-2023-11-01 14:23:57 Waiting for connection... 2
-2023-11-01 14:23:58 Waiting for connection... 3
-2023-11-01 14:23:59 Waiting for connection... 4
-2023-11-01 14:24:00 Waiting for connection... 5
-2023-11-01 14:24:01 Waiting for connection... 6
-2023-11-01 14:24:02 Waiting for connection... 7
-2023-11-01 14:24:03 Waiting for connection... 8
-2023-11-01 14:24:04 Waiting for connection... 9
-2023-11-01 14:24:07 Waiting for connection... 1
-2023-11-01 14:24:08 Waiting for connection... 2
-2023-11-01 14:24:10 Waiting for connection... 3
-2023-11-01 14:24:11 Waiting for connection... 4
-2023-11-01 14:24:12 Waiting for connection... 5
-2023-11-01 14:24:13 Waiting for connection... 6
-2023-11-01 14:24:14 Waiting for connection... 7
-2023-11-01 14:24:15 Waiting for connection... 8
-2023-11-01 14:24:16 Waiting for connection... 9
-2023-11-01 14:24:19 Waiting for connection... 1
-2023-11-01 14:24:20 Waiting for connection... 2
-2023-11-01 14:24:21 Waiting for connection... 3
-2023-11-01 14:24:22 Waiting for connection... 4
-2023-11-01 14:24:23 Waiting for connection... 5
-2023-11-01 14:24:24 Waiting for connection... 6
-2023-11-01 14:24:25 Waiting for connection... 7
-2023-11-01 14:24:27 Waiting for connection... 8
-2023-11-01 14:24:28 Waiting for connection... 9
-2023-11-01 14:24:31 Waiting for connection... 1
-2023-11-01 14:24:32 Waiting for connection... 2
-2023-11-01 14:24:33 Waiting for connection... 3
-2023-11-01 14:24:34 Waiting for connection... 4
-2023-11-01 14:24:35 Waiting for connection... 5
-2023-11-01 14:24:36 Waiting for connection... 6
-2023-11-01 14:24:37 Waiting for connection... 7
-2023-11-01 14:24:38 Waiting for connection... 8
-2023-11-01 14:24:39 Waiting for connection... 9
-2023-11-01 14:24:42 Waiting for connection... 1
-2023-11-01 14:24:43 Waiting for connection... 2
-2023-11-01 14:24:44 Waiting for connection... 3
-2023-11-01 14:24:45 Waiting for connection... 4
-2023-11-01 14:24:47 Waiting for connection... 5
-2023-11-01 14:24:48 Waiting for connection... 6
-2023-11-01 14:24:49 Waiting for connection... 7
-2023-11-01 14:24:50 Waiting for connection... 8
-2023-11-01 14:24:51 Waiting for connection... 9
-2023-11-01 14:24:54 Waiting for connection... 1
-2023-11-01 14:24:55 Waiting for connection... 2
-2023-11-01 14:24:56 Waiting for connection... 3
-2023-11-01 14:24:57 Waiting for connection... 4
-2023-11-01 14:24:58 Waiting for connection... 5
-2023-11-01 14:24:59 Waiting for connection... 6
-2023-11-01 14:25:00 Waiting for connection... 7
-2023-11-01 14:25:01 Waiting for connection... 8
-2023-11-01 14:25:02 Waiting for connection... 9
-2023-11-01 14:25:05 Waiting for connection... 1
-2023-11-01 14:25:06 Waiting for connection... 2
-2023-11-01 14:25:07 Waiting for connection... 3
-2023-11-01 14:25:08 Waiting for connection... 4
-2023-11-01 14:25:10 Waiting for connection... 5
-2023-11-01 14:25:11 Waiting for connection... 6
-2023-11-01 14:25:12 Waiting for connection... 7
-2023-11-01 14:25:13 Waiting for connection... 8
-2023-11-01 14:25:14 Waiting for connection... 9
-2023-11-01 14:25:17 Waiting for connection... 1
-2023-11-01 14:25:18 Waiting for connection... 2
-2023-11-01 14:25:19 Waiting for connection... 3
-2023-11-01 14:25:20 Waiting for connection... 4
-2023-11-01 14:25:21 Waiting for connection... 5
-2023-11-01 14:25:22 Waiting for connection... 6
-2023-11-01 14:25:23 Waiting for connection... 7
-2023-11-01 14:25:24 Waiting for connection... 8
-2023-11-01 14:25:25 Waiting for connection... 9
-2023-11-01 14:25:28 Waiting for connection... 1
-2023-11-01 14:25:29 Waiting for connection... 2
-2023-11-01 14:25:30 Waiting for connection... 3
-2023-11-01 14:25:32 Waiting for connection... 4
-2023-11-01 14:25:33 Waiting for connection... 5
-2023-11-01 14:25:34 Waiting for connection... 6
-2023-11-01 14:25:35 Waiting for connection... 7
-2023-11-01 14:25:36 Waiting for connection... 8
-2023-11-01 14:25:37 Waiting for connection... 9
-2023-11-01 14:25:37 Keyboard interupt
-2023-11-01 14:25:37 No connection to close
+2023-11-02 16:26:04 ############ EnvPlat is starting ############
+2023-11-02 16:26:04 OLED 1306 display found and initialized
+2023-11-02 16:26:04 DS18B20 Sensor found: 28cd215704e13c92
+2023-11-02 16:26:04 DS18B20 Sensor found: 2849675704e13cd1
+2023-11-02 16:26:04 Loaded data file shorttermdata.txt with 98 data rows
+2023-11-02 16:26:04 Loaded data file midtermdata.txt with 19 data rows
+2023-11-02 16:26:04 Loaded data file longtermdata.txt with 13 data rows
+2023-11-02 16:51:18 ############ EnvPlat is starting ############
+2023-11-02 16:51:18 OLED 1306 display found and initialized
+2023-11-02 16:51:18 DS18B20 Sensor found: 28cd215704e13c92
+2023-11-02 16:51:18 DS18B20 Sensor found: 2849675704e13cd1
+2023-11-02 16:51:18 Loaded data file shorttermdata.txt with 98 data rows
+2023-11-02 16:51:19 Loaded data file midtermdata.txt with 19 data rows
+2023-11-02 16:51:19 Loaded data file longtermdata.txt with 13 data rows
+2023-11-02 17:31:36 ############ EnvPlat is starting ############
+2023-11-02 17:31:36 OLED 1306 display found and initialized
+2023-11-02 17:31:36 DS18B20 Sensor found: 28cd215704e13c92
+2023-11-02 17:31:36 DS18B20 Sensor found: 2849675704e13cd1
+2023-11-02 17:31:36 Loaded data file shorttermdata.txt with 98 data rows
+2023-11-02 17:31:37 Loaded data file midtermdata.txt with 19 data rows
+2023-11-02 17:31:37 Loaded data file longtermdata.txt with 13 data rows
+2023-11-02 17:32:07 ############ EnvPlat is starting ############
+2023-11-02 17:32:07 OLED 1306 display found and initialized
+2023-11-02 17:32:07 DS18B20 Sensor found: 28cd215704e13c92
+2023-11-02 17:32:07 DS18B20 Sensor found: 2849675704e13cd1
+2023-11-02 17:32:07 Loaded data file shorttermdata.txt with 98 data rows
+2023-11-02 17:32:07 Loaded data file midtermdata.txt with 19 data rows
+2023-11-02 17:32:07 Loaded data file longtermdata.txt with 13 data rows
+2023-11-02 17:34:19 ############ EnvPlat is starting ############
+2023-11-02 17:34:19 OLED 1306 display found and initialized
+2023-11-02 17:34:19 DS18B20 Sensor found: 28cd215704e13c92
+2023-11-02 17:34:19 DS18B20 Sensor found: 2849675704e13cd1
+2023-11-02 17:34:19 Loaded data file shorttermdata.txt with 98 data rows
+2023-11-02 17:34:19 Loaded data file midtermdata.txt with 19 data rows
+2023-11-02 17:34:19 Loaded data file longtermdata.txt with 13 data rows
 2021-01-01 00:00:04 ############ EnvPlat is starting ############
 2021-01-01 00:00:04 OLED 1306 display found and initialized
 2021-01-01 00:00:04 DS18B20 Sensor found: 28cd215704e13c92
 2021-01-01 00:00:04 DS18B20 Sensor found: 2849675704e13cd1
-2021-01-01 00:00:04 Loaded data file shorttermdata.txt with 32 data rows
-2021-01-01 00:00:04 Loaded data file midtermdata.txt with 11 data rows
-2021-01-01 00:00:05 Loaded data file longtermdata.txt with 6 data rows
-2021-01-01 00:00:07 Waiting for connection... 1
-2021-01-01 00:00:08 Waiting for connection... 2
-2021-01-01 00:00:09 Waiting for connection... 3
-2021-01-01 00:00:10 Waiting for connection... 4
-2021-01-01 00:00:11 Waiting for connection... 5
-2021-01-01 00:00:12 Wifi Connected on address: 192.168.1.240
-2021-01-01 00:00:12 RTC time: (2021, 1, 1, 4, 0, 0, 12, 0)
-2021-01-01 00:00:13 Attempt to get time from pool.ntp.org
-2023-11-01 14:26:19 Clock set from NTP at pool.ntp.org, time is: 14:26:19
-2023-11-01 14:26:20 Set watchdog with 8s timeout
-2023-11-01 14:26:20 Start data collection thread
-2023-11-01 14:26:20 Data collection thread has started
-2023-11-01 14:26:21 Open network socket
-2023-11-01 14:26:21 Accept web requests
-2023-11-01 14:26:22 Sensor data has been stored: {'v': [18.81, 18.38, 33.16, 6369, 18.93177, 52.31953, 20.49, 998.4334], 't': '2023-11-01 14:26:22'}
-2023-11-01 14:26:32 Sensor data has been stored: {'v': [18.81, 18.44, 33.09, 6353, 18.92395, 52.30408, 20.47, 998.425], 't': '2023-11-01 14:26:32'}
-2023-11-01 14:26:35 Got request: /stats
-2023-11-01 14:26:35 Send file header.html
-2023-11-01 14:26:39 Got request: /
-2023-11-01 14:26:39 Send file header.html
-2023-11-01 14:26:39 Send file main.html
-2023-11-01 14:26:41 Got request: /bigdisplay
-2023-11-01 14:26:41 Send file header.html
-2023-11-01 14:26:43 Sensor data has been stored: {'v': [18.81, 18.44, 33.09, 5905, 18.93215, 52.28338, 20.49, 998.4199], 't': '2023-11-01 14:26:43'}
-2023-11-01 14:26:52 Got request: /bigdisplay
-2023-11-01 14:26:52 Send file header.html
-2023-11-01 14:26:52 Got request: /favicon-32x32.png
-2023-11-01 14:26:52 Send file /favicon-32x32.png
-2023-11-01 14:26:53 Sensor data has been stored: {'v': [18.81, 18.5, 33.11, 5377, 18.91289, 52.29654, 20.5, 998.435], 't': '2023-11-01 14:26:53'}
-2023-11-01 14:27:02 Got request: /bigdisplay
-2023-11-01 14:27:02 Send file header.html
-2023-11-01 14:27:02 Got request: /favicon-32x32.png
-2023-11-01 14:27:02 Send file /favicon-32x32.png
-2023-11-01 14:27:04 Sensor data has been stored: {'v': [18.81, 18.5, 33.11, 5361, 18.93654, 52.29588, 20.51, 998.4199], 't': '2023-11-01 14:27:04'}
-2023-11-01 14:27:12 Got request: /bigdisplay
-2023-11-01 14:27:12 Send file header.html
-2023-11-01 14:27:12 Got request: /favicon-32x32.png
-2023-11-01 14:27:12 Send file /favicon-32x32.png
-2023-11-01 14:27:14 Sensor data has been stored: {'v': [18.75, 18.5, 33.14, 5393, 18.96992, 52.31199, 20.52, 998.4294], 't': '2023-11-01 14:27:14'}
-2023-11-01 14:27:22 Got request: /bigdisplay
-2023-11-01 14:27:22 Send file header.html
-2023-11-01 14:27:23 Got request: /favicon-32x32.png
-2023-11-01 14:27:23 Send file /favicon-32x32.png
-2023-11-01 14:27:24 Sensor data has been stored: {'v': [18.81, 18.5, 33.11, 5409, 18.96172, 52.35453, 20.53, 998.4271], 't': '2023-11-01 14:27:24'}
-2023-11-01 14:27:33 Got request: /bigdisplay
-2023-11-01 14:27:33 Send file header.html
-2023-11-01 14:27:33 Got request: /favicon-32x32.png
-2023-11-01 14:27:33 Send file /favicon-32x32.png
-2023-11-01 14:27:35 Sensor data has been stored: {'v': [18.81, 18.5, 33.14, 5441, 18.96896, 52.37265, 20.54, 998.4274], 't': '2023-11-01 14:27:35'}
-2023-11-01 14:27:43 Got request: /bigdisplay
-2023-11-01 14:27:43 Send file header.html
-2023-11-01 14:27:43 Got request: /favicon-32x32.png
-2023-11-01 14:27:43 Send file /favicon-32x32.png
-2023-11-01 14:27:45 Sensor data has been stored: {'v': [18.81, 18.5, 33.11, 5441, 18.97087, 52.37474, 20.54, 998.4479], 't': '2023-11-01 14:27:45'}
-2023-11-01 14:27:53 Got request: /bigdisplay
-2023-11-01 14:27:53 Send file header.html
-2023-11-01 14:27:53 Got request: /favicon-32x32.png
-2023-11-01 14:27:54 Send file /favicon-32x32.png
-2023-11-01 14:27:56 Sensor data has been stored: {'v': [18.81, 18.5, 33.09, 5505, 18.98556, 52.32744, 20.54, 998.4411], 't': '2023-11-01 14:27:56'}
-2023-11-01 14:28:04 Got request: /bigdisplay
-2023-11-01 14:28:04 Send file header.html
-2023-11-01 14:28:04 Got request: /favicon-32x32.png
-2023-11-01 14:28:04 Send file /favicon-32x32.png
-2023-11-01 14:28:06 Sensor data has been stored: {'v': [18.81, 18.5, 33.11, 5521, 18.99185, 52.35901, 20.55, 998.4509], 't': '2023-11-01 14:28:06'}
-2023-11-01 14:28:07 Got request: /
-2023-11-01 14:28:07 Send file header.html
-2023-11-01 14:28:07 Send file main.html
-2023-11-01 14:28:12 Got request: /chart.html?f=shorttermdata.txt
-2023-11-01 14:28:12 Send file header.html
-2023-11-01 14:28:12 Send file /chart.html
-2023-11-01 14:28:13 Got request: /shorttermdata.txt
-2023-11-01 14:28:16 Sensor data has been stored: {'v': [18.88, 18.5, 33.14, 5441, 18.98289, 52.29607, 20.55, 998.4472], 't': '2023-11-01 14:28:16'}
-2023-11-01 14:28:24 Got request: /
-2023-11-01 14:28:24 Send file header.html
-2023-11-01 14:28:24 Send file main.html
-2023-11-01 14:28:27 Sensor data has been stored: {'v': [18.81, 18.5, 33.09, 5457, 18.99014, 52.33984, 20.56, 998.447], 't': '2023-11-01 14:28:27'}
-2023-11-01 14:28:27 Got request: /stats
-2023-11-01 14:28:27 Send file header.html
-2023-11-01 14:28:36 Got request: /
-2023-11-01 14:28:36 Send file header.html
-2023-11-01 14:28:36 Send file main.html
-2023-11-01 14:28:37 Sensor data has been stored: {'v': [18.88, 18.56, 33.09, 5473, 19.01073, 52.33183, 20.58, 998.4425], 't': '2023-11-01 14:28:37'}
-2023-11-01 14:28:42 Got request: /chart.html?f=longtermdata.txt
-2023-11-01 14:28:43 Send file header.html
-2023-11-01 14:28:43 Send file /chart.html
-2023-11-01 14:28:43 Got request: /longtermdata.txt
-2023-11-01 14:28:48 Sensor data has been stored: {'v': [18.88, 18.56, 33.11, 5505, 19.01245, 52.3591, 20.58, 998.4439], 't': '2023-11-01 14:28:48'}
-2023-11-01 14:28:49 Got request: /chart.html?f=longtermdata.txt
-2023-11-01 14:28:49 Send file header.html
-2023-11-01 14:28:50 Send file /chart.html
-2023-11-01 14:28:50 Got request: /longtermdata.txt
-2023-11-01 14:28:58 Got request: /
-2023-11-01 14:28:58 Send file header.html
-2023-11-01 14:28:58 Send file main.html
-2023-11-01 14:28:58 Sensor data has been stored: {'v': [18.81, 18.5, 33.16, 5505, 19.01379, 52.30045, 20.58, 998.4849], 't': '2023-11-01 14:28:58'}
-2023-11-01 14:29:06 Got request: /
-2023-11-01 14:29:06 Send file header.html
-2023-11-01 14:29:06 Send file main.html
-2023-11-01 14:29:08 Sensor data has been stored: {'v': [18.81, 18.56, 33.14, 5521, 19.00368, 52.28653, 20.57, 998.4737], 't': '2023-11-01 14:29:08'}
-2023-11-01 14:29:19 Sensor data has been stored: {'v': [18.81, 18.5, 33.14, 5553, 19.00959, 52.29626, 20.56, 998.4858], 't': '2023-11-01 14:29:19'}
-2023-11-01 14:29:29 Sensor data has been stored: {'v': [18.81, 18.5, 33.02, 5569, 19.02237, 52.37112, 20.57, 998.5061], 't': '2023-11-01 14:29:29'}
-2023-11-01 14:29:40 Sensor data has been stored: {'v': [18.88, 18.5, 33.14, 5553, 19.01016, 52.28701, 20.56, 998.5144], 't': '2023-11-01 14:29:40'}
-2023-11-01 14:29:46 Got request: /log.txt
-2023-11-01 14:29:46 Send file /log.txt
-2023-11-01 14:29:48 Got request: /favicon.ico
-2023-11-01 14:29:48 Send file /favicon.ico
-2023-11-01 14:29:50 Sensor data has been stored: {'v': [18.81, 18.5, 33.14, 5569, 19.01474, 52.29101, 20.56, 998.5009], 't': '2023-11-01 14:29:50'}
-2023-11-01 14:30:00 Got request: /bigdisplay
-2023-11-01 14:30:00 Send file header.html
-2023-11-01 14:30:00 Unable to print to OLED: M: 33.16 5569
-2023-11-01 14:30:00 Sensor data has been stored: {'v': [18.88, 18.5, 33.16, 5569, 19.00616, 52.29874, 20.56, 998.517], 't': '2023-11-01 14:30:00'}
-2023-11-01 14:30:11 Got request: /bigdisplay
-2023-11-01 14:30:11 Unable to clear OLED: [Errno 110] ETIMEDOUT
-2023-11-01 14:30:11 Send file header.html
-2023-11-01 14:30:11 Sensor data has been stored: {'v': [18.88, 18.56, 33.16, 5841, 18.99471, 52.37217, 20.56, 998.5198], 't': '2023-11-01 14:30:11'}
-2023-11-01 14:30:11 Got request: /site.webmanifest
-2023-11-01 14:30:11 Send file /site.webmanifest
-2023-11-01 14:30:11 Got request: /favicon-32x32.png
-2023-11-01 14:30:11 Send file /favicon-32x32.png
-2023-11-01 14:30:21 Sensor data has been stored: {'v': [18.88, 18.56, 33.16, 6641, 18.98499, 52.384, 20.56, 998.55], 't': '2023-11-01 14:30:21'}
-2023-11-01 14:30:32 Sensor data has been stored: {'v': [18.88, 18.56, 33.11, 5601, 19.02065, 52.3613, 20.57, 998.5389], 't': '2023-11-01 14:30:32'}
-2023-11-01 14:30:42 Sensor data has been stored: {'v': [18.88, 18.5, 33.11, 5569, 19.00387, 52.36931, 20.56, 998.5558], 't': '2023-11-01 14:30:42'}
-2023-11-01 14:30:53 Sensor data has been stored: {'v': [18.88, 18.56, 33.16, 5601, 18.99567, 52.40726, 20.58, 998.5784], 't': '2023-11-01 14:30:53'}
-2023-11-01 14:31:03 Sensor data has been stored: {'v': [18.88, 18.56, 33.14, 5585, 19.03343, 52.39534, 20.59, 998.5803], 't': '2023-11-01 14:31:03'}
-2023-11-01 14:31:13 Sensor data has been stored: {'v': [18.88, 18.56, 32.94, 6385, 19.0321, 52.28472, 20.59, 998.5659], 't': '2023-11-01 14:31:13'}
-2023-11-01 14:31:24 Sensor data has been stored: {'v': [18.88, 18.56, 32.87, 4993, 19.20662, 51.63937, 20.73, 998.5974], 't': '2023-11-01 14:31:24'}
-2023-11-01 14:31:31 Got request: b''
-2023-11-01 14:31:31 Send file b''
-2023-11-01 14:31:31 Unable to send file b'': [Errno 2] ENOENT
-2023-11-01 14:31:32 Got request: /bigdisplay
-2023-11-01 14:31:32 Send file header.html
-2023-11-01 14:31:32 Got request: /favicon-32x32.png
-2023-11-01 14:31:32 Send file /favicon-32x32.png
-2023-11-01 14:31:34 Sensor data has been stored: {'v': [18.88, 18.62, 32.85, 5185, 19.00272, 51.63717, 20.54, 998.5876], 't': '2023-11-01 14:31:34'}
-2023-11-01 14:31:42 Got request: /bigdisplay
-2023-11-01 14:31:42 Send file header.html
-2023-11-01 14:31:42 Got request: /favicon-32x32.png
-2023-11-01 14:31:43 Send file /favicon-32x32.png
-2023-11-01 14:31:45 Sensor data has been stored: {'v': [18.94, 18.56, 32.87, 5345, 18.88371, 52.02446, 20.46, 998.5856], 't': '2023-11-01 14:31:45'}
-2023-11-01 14:31:52 Got request: /bigdisplay
-2023-11-01 14:31:52 Send file header.html
-2023-11-01 14:31:53 Got request: /favicon-32x32.png
-2023-11-01 14:31:53 Send file /favicon-32x32.png
-2023-11-01 14:31:55 Sensor data has been stored: {'v': [18.88, 18.56, 32.85, 5345, 18.81332, 52.23789, 20.36, 998.5669], 't': '2023-11-01 14:31:55'}
-2023-11-01 14:32:03 Got request: /bigdisplay
-2023-11-01 14:32:03 Send file header.html
-2023-11-01 14:32:03 Got request: /favicon-32x32.png
-2023-11-01 14:32:03 Send file /favicon-32x32.png
-2023-11-01 14:32:03 Got request: /chart.html?f=shorttermdata.txt
-2023-11-01 14:32:03 Send file header.html
-2023-11-01 14:32:03 Send file /chart.html
-2023-11-01 14:32:03 Got request: /shorttermdata.txt
-2023-11-01 14:32:05 Sensor data has been stored: {'v': [18.94, 18.56, 32.87, 5345, 18.72673, 52.45256, 20.3, 998.5706], 't': '2023-11-01 14:32:05'}
-2023-11-01 14:32:07 Got request: /
-2023-11-01 14:32:07 Send file header.html
-2023-11-01 14:32:07 Send file main.html
-2023-11-01 14:32:12 Got request: /chart.html?f=longtermdata.txt
-2023-11-01 14:32:12 Send file header.html
-2023-11-01 14:32:12 Send file /chart.html
-2023-11-01 14:32:12 Got request: /longtermdata.txt
-2023-11-01 14:32:16 Sensor data has been stored: {'v': [18.88, 18.56, 32.82, 5345, 18.70327, 52.56195, 20.26, 998.5865], 't': '2023-11-01 14:32:16'}
-2023-11-01 14:32:16 Got request: /
-2023-11-01 14:32:16 Send file header.html
-2023-11-01 14:32:16 Send file main.html
-2023-11-01 14:32:18 Got request: /log.txt
-2023-11-01 14:32:18 Send file /log.txt
-2023-11-01 14:32:26 Sensor data has been stored: {'v': [18.94, 18.56, 32.87, 5313, 18.66283, 52.54841, 20.21, 998.5692], 't': '2023-11-01 14:32:26'}
-2023-11-01 14:32:37 Sensor data has been stored: {'v': [18.88, 18.56, 32.87, 5297, 18.61382, 52.72684, 20.17, 998.593], 't': '2023-11-01 14:32:37'}
-2023-11-01 14:32:38 Got request: /
-2023-11-01 14:32:38 Send file header.html
-2023-11-01 14:32:38 Send file main.html
-2023-11-01 14:32:41 Got request: /chart.html?f=shorttermdata.txt
-2023-11-01 14:32:41 Send file header.html
-2023-11-01 14:32:41 Send file /chart.html
-2023-11-01 14:32:41 Got request: /site.webmanifest
-2023-11-01 14:32:41 Send file /site.webmanifest
-2023-11-01 14:32:42 Got request: /shorttermdata.txt
-2023-11-01 14:32:47 Sensor data has been stored: {'v': [18.94, 18.62, 32.8, 5297, 18.53619, 52.77967, 20.12, 998.6142], 't': '2023-11-01 14:32:47'}
-2023-11-01 14:32:50 Got request: /
-2023-11-01 14:32:50 Send file header.html
-2023-11-01 14:32:51 Send file main.html
-2023-11-01 14:32:52 Got request: /shorttermdata.txt
-2023-11-01 14:32:56 Got request: /shorttermdata.txt
-2023-11-01 14:32:56 Got request: /favicon.ico
-2023-11-01 14:32:56 Send file /favicon.ico
-2023-11-01 14:32:57 Sensor data has been stored: {'v': [18.88, 18.56, 32.85, 5265, 18.50853, 52.81982, 20.08, 998.6205], 't': '2023-11-01 14:32:57'}
-2023-11-01 14:33:01 Got request: /shorttermdata.txt
-2023-11-01 14:33:01 Got request: /favicon.ico
-2023-11-01 14:33:01 Send file /favicon.ico
-2023-11-01 14:33:04 Got request: /shorttermdata.txt
-2023-11-01 14:33:04 Got request: /favicon.ico
-2023-11-01 14:33:04 Send file /favicon.ico
-2023-11-01 14:33:07 Got request: /shorttermdata.txt
-2023-11-01 14:33:07 Got request: /favicon.ico
-2023-11-01 14:33:07 Send file /favicon.ico
-2023-11-01 14:33:08 Sensor data has been stored: {'v': [18.88, 18.56, 32.85, 5393, 18.49117, 52.95496, 20.04, 998.6127], 't': '2023-11-01 14:33:08'}
-2023-11-01 14:33:08 Got request: /shorttermdata.txt
-2023-11-01 14:33:09 Got request: /favicon.ico
-2023-11-01 14:33:09 Send file /favicon.ico
-2023-11-01 14:33:18 Sensor data has been stored: {'v': [18.88, 18.56, 32.87, 5217, 18.43834, 53.05433, 20.01, 998.6078], 't': '2023-11-01 14:33:18'}
-2023-11-01 14:33:29 Sensor data has been stored: {'v': [18.88, 18.56, 32.85, 5217, 18.41049, 53.13454, 19.97, 998.5952], 't': '2023-11-01 14:33:29'}
-2023-11-01 14:33:30 Keyboard interupt
+2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 98 data rows
+2021-01-01 00:00:05 Loaded data file midtermdata.txt with 19 data rows
+2021-01-01 00:00:05 Loaded data file longtermdata.txt with 13 data rows
+2021-01-01 00:00:05 Keyboard interupt
+2021-01-01 00:00:05 No connection to close
+2023-11-02 17:34:53 ############ EnvPlat is starting ############
+2023-11-02 17:34:53 OLED 1306 display found and initialized
+2023-11-02 17:34:53 DS18B20 Sensor found: 28cd215704e13c92
+2023-11-02 17:34:53 DS18B20 Sensor found: 2849675704e13cd1
+2023-11-02 17:34:53 Loaded data file shorttermdata.txt with 98 data rows
+2023-11-02 17:34:53 Loaded data file midtermdata.txt with 19 data rows
+2023-11-02 17:34:53 Loaded data file longtermdata.txt with 13 data rows
+2023-11-02 17:34:56 Waiting for connection... 1
+2023-11-02 17:34:57 Waiting for connection... 2
+2023-11-02 17:34:58 Waiting for connection... 3
+2023-11-02 17:34:59 Wifi Connected on address: 192.168.1.240
+2023-11-02 17:34:59 RTC time: (2023, 11, 2, 3, 17, 34, 59, 0)
+2023-11-02 17:34:59 No need to get time from NTP...
+2023-11-02 17:34:59 Set watchdog with 8s timeout
+2023-11-02 17:34:59 Start data collection thread
+2023-11-02 17:34:59 Open network socket
+2023-11-02 17:34:59 Accept web requests
+2023-11-02 17:35:03 Aquire data from sensors...
+2023-11-02 17:35:06 Memory free: 75248 diff: 75248
+2023-11-02 17:35:06 Sensor data has been save to FS: {'v': [19.25, 19.0, 32.65, 8722, 18.74218, 49.35026, 20.23, 1012.888], 't': '2023-11-02 17:35:06'}
+2023-11-02 17:35:06 Sensor data has been stored: {'v': [19.25, 19.0, 32.65, 8722, 18.74218, 49.35026, 20.23, 1012.888], 't': '2023-11-02 17:35:06'}
+2023-11-02 17:35:19 Aquire data from sensors...
+2023-11-02 17:35:22 Memory free: 75008 diff: -240
+2023-11-02 17:35:22 Sensor data has been stored: {'v': [19.25, 19.12, 32.8, 8626, 18.79654, 49.41149, 20.27, 1012.923], 't': '2023-11-02 17:35:22'}
+2023-11-02 17:35:34 Got request: /
+2023-11-02 17:35:34 Send file header.html
+2023-11-02 17:35:34 Send file main.html
+2023-11-02 17:35:34 Got request: /favicon-32x32.png
+2023-11-02 17:35:34 Send file /favicon-32x32.png
+2023-11-02 17:35:34 Got request: /favicon-32x32.png
+2023-11-02 17:35:34 Send file /favicon-32x32.png
+2023-11-02 17:35:35 Aquire data from sensors...
+2023-11-02 17:35:38 Memory free: 73824 diff: -1184
+2023-11-02 17:35:38 Sensor data has been stored: {'v': [19.25, 19.19, 32.8, 8754, 18.79749, 49.32089, 20.28, 1012.924], 't': '2023-11-02 17:35:38'}
+2023-11-02 17:35:38 Got request: /bigdisplay
+2023-11-02 17:35:38 Send file header.html
+2023-11-02 17:35:38 Got request: /favicon-32x32.png
+2023-11-02 17:35:38 Send file /favicon-32x32.png
+2023-11-02 17:35:41 Got request: /
+2023-11-02 17:35:41 Send file header.html
+2023-11-02 17:35:41 Send file main.html
+2023-11-02 17:35:41 Got request: /favicon-32x32.png
+2023-11-02 17:35:41 Send file /favicon-32x32.png
+2023-11-02 17:35:45 Got request: /restart
+2023-11-02 17:35:45 Resetting controller...
+2023-11-02 17:36:40 ############ EnvPlat is starting ############
+2023-11-02 17:36:40 OLED 1306 display found and initialized
+2023-11-02 17:36:40 DS18B20 Sensor found: 28cd215704e13c92
+2023-11-02 17:36:41 DS18B20 Sensor found: 2849675704e13cd1
+2023-11-02 17:36:41 Loaded data file shorttermdata.txt with 100 data rows
+2023-11-02 17:36:41 Loaded data file midtermdata.txt with 20 data rows
+2023-11-02 17:36:41 Loaded data file longtermdata.txt with 14 data rows
+2023-11-02 17:36:43 Waiting for connection... 1
+2023-11-02 17:36:44 Waiting for connection... 2
+2023-11-02 17:36:46 Waiting for connection... 3
+2023-11-02 17:36:47 Waiting for connection... 4
+2023-11-02 17:36:48 Waiting for connection... 5
+2023-11-02 17:36:49 Waiting for connection... 6
+2023-11-02 17:36:50 Waiting for connection... 7
+2023-11-02 17:36:51 Waiting for connection... 8
+2023-11-02 17:36:52 Waiting for connection... 9
+2023-11-02 17:36:55 Waiting for connection... 1
+2023-11-02 17:36:56 Waiting for connection... 2
+2023-11-02 17:36:57 Waiting for connection... 3
+2023-11-02 17:36:58 Waiting for connection... 4
+2023-11-02 17:36:59 Waiting for connection... 5
+2023-11-02 17:37:00 Waiting for connection... 6
+2023-11-02 17:37:01 Waiting for connection... 7
+2023-11-02 17:37:02 Waiting for connection... 8
+2023-11-02 17:37:03 Waiting for connection... 9
+2023-11-02 17:37:07 Wifi Connected on address: 192.168.1.240
+2023-11-02 17:37:07 RTC time: (2023, 11, 2, 3, 17, 37, 7, 0)
+2023-11-02 17:37:07 No need to get time from NTP...
+2023-11-02 17:37:07 Set watchdog with 8s timeout
+2023-11-02 17:37:07 Start data collection thread
+2023-11-02 17:37:07 Open network socket
+2023-11-02 17:37:07 Accept web requests
+2023-11-02 17:37:11 Aquire data from sensors...
+2023-11-02 17:37:13 Memory free: 74288 diff: 74288
+2023-11-02 17:37:14 Sensor data has been save to FS: {'v': [19.31, 18.94, 32.8, 8466, 18.82744, 49.40109, 20.31, 1012.962], 't': '2023-11-02 17:37:14'}
+2023-11-02 17:37:14 Sensor data has been stored: {'v': [19.31, 18.94, 32.8, 8466, 18.82744, 49.40109, 20.31, 1012.962], 't': '2023-11-02 17:37:14'}
+2023-11-02 17:37:27 Aquire data from sensors...
+2023-11-02 17:37:29 Memory free: 74048 diff: -240
+2023-11-02 17:37:29 Sensor data has been stored: {'v': [19.25, 19.12, 32.8, 8466, 18.88084, 49.24831, 20.37, 1012.978], 't': '2023-11-02 17:37:29'}
+2023-11-02 17:37:43 Aquire data from sensors...
+2023-11-02 17:37:45 Memory free: 74048 diff: 0
+2023-11-02 17:37:45 Sensor data has been stored: {'v': [19.25, 19.12, 32.75, 8498, 18.9024, 49.07427, 20.42, 1012.992], 't': '2023-11-02 17:37:45'}
+2023-11-02 17:37:59 Aquire data from sensors...
+2023-11-02 17:38:01 Memory free: 73808 diff: -240
+2023-11-02 17:38:01 Sensor data has been stored: {'v': [19.25, 19.12, 32.77, 8498, 18.94817, 49.2363, 20.45, 1013.011], 't': '2023-11-02 17:38:01'}
+2023-11-02 17:38:15 Aquire data from sensors...
+2023-11-02 17:38:17 Memory free: 73808 diff: 0
+2023-11-02 17:38:17 Sensor data has been stored: {'v': [19.25, 19.12, 32.77, 8482, 18.97488, 49.1786, 20.46, 1013.005], 't': '2023-11-02 17:38:17'}
+2023-11-02 17:38:31 Aquire data from sensors...
+2023-11-02 17:38:33 Memory free: 73568 diff: -240
+2023-11-02 17:38:33 Sensor data has been stored: {'v': [19.25, 19.19, 32.8, 8738, 18.97717, 49.25337, 20.46, 1013.013], 't': '2023-11-02 17:38:33'}
+2023-11-02 17:38:47 Aquire data from sensors...
+2023-11-02 17:38:49 Memory free: 73568 diff: 0
+2023-11-02 17:38:49 Sensor data has been stored: {'v': [19.31, 19.12, 32.8, 8754, 19.03286, 49.07684, 20.51, 1012.993], 't': '2023-11-02 17:38:49'}
+2023-11-02 17:39:03 Aquire data from sensors...
+2023-11-02 17:39:05 Memory free: 73328 diff: -240
+2023-11-02 17:39:05 Sensor data has been stored: {'v': [19.25, 19.12, 32.8, 8706, 19.0691, 48.95658, 20.56, 1013.009], 't': '2023-11-02 17:39:05'}
+2023-11-02 17:39:19 Aquire data from sensors...
+2023-11-02 17:39:21 Memory free: 73328 diff: 0
+2023-11-02 17:39:21 Sensor data has been stored: {'v': [19.25, 19.12, 32.75, 8850, 19.06414, 48.97919, 20.55, 1013.034], 't': '2023-11-02 17:39:21'}
+2023-11-02 17:39:35 Aquire data from sensors...
+2023-11-02 17:39:37 Memory free: 73088 diff: -240
+2023-11-02 17:39:37 Sensor data has been stored: {'v': [19.25, 19.12, 32.75, 8786, 19.08722, 48.93169, 20.59, 1013.006], 't': '2023-11-02 17:39:37'}
+2023-11-02 17:39:51 Aquire data from sensors...
+2023-11-02 17:39:53 Memory free: 73088 diff: 0
+2023-11-02 17:39:54 Sensor data has been save to FS: {'v': [19.25, 19.12, 32.8, 8818, 19.13891, 48.6845, 20.61, 1012.996], 't': '2023-11-02 17:39:53'}
+2023-11-02 17:39:54 Sensor data has been stored: {'v': [19.25, 19.12, 32.8, 8818, 19.13891, 48.6845, 20.61, 1012.996], 't': '2023-11-02 17:39:53'}
+2023-11-02 17:40:07 Aquire data from sensors...
+2023-11-02 17:40:09 Memory free: 72848 diff: -240
+2023-11-02 17:40:09 Sensor data has been stored: {'v': [19.25, 19.12, 32.77, 8770, 19.13891, 48.491, 20.63, 1012.978], 't': '2023-11-02 17:40:09'}
+2023-11-02 17:40:23 Aquire data from sensors...
+2023-11-02 17:40:25 Memory free: 72848 diff: 0
+2023-11-02 17:40:25 Sensor data has been stored: {'v': [19.25, 19.12, 32.75, 8834, 19.1431, 48.5404, 20.65, 1013.002], 't': '2023-11-02 17:40:25'}
+2023-11-02 17:40:36 Keyboard interupt
+2023-11-02 17:40:59 ############ EnvPlat is starting ############
+2023-11-02 17:41:00 OLED 1306 display found and initialized
+2023-11-02 17:41:00 DS18B20 Sensor found: 28cd215704e13c92
+2023-11-02 17:41:00 DS18B20 Sensor found: 2849675704e13cd1
+2023-11-02 17:41:00 Loaded data file shorttermdata.txt with 106 data rows
+2023-11-02 17:41:00 Loaded data file midtermdata.txt with 21 data rows
+2023-11-02 17:41:01 Loaded data file longtermdata.txt with 15 data rows
+2023-11-02 17:41:03 Waiting for connection... 1
+2023-11-02 17:41:04 Waiting for connection... 2
+2023-11-02 17:41:05 Waiting for connection... 3
+2023-11-02 17:41:06 Wifi Connected on address: 192.168.1.240
+2023-11-02 17:41:07 RTC time: (2023, 11, 2, 3, 17, 41, 7, 0)
+2023-11-02 17:41:07 No need to get time from NTP...
+2023-11-02 17:41:07 Set watchdog with 8s timeout
+2023-11-02 17:41:07 Start data collection thread
+2023-11-02 17:41:07 Open network socket
+2023-11-02 17:41:07 Accept web requests
+2023-11-02 17:41:11 Aquire data from sensors...
+2023-11-02 17:41:14 Memory free: 72448 diff: 72448
+2023-11-02 17:41:14 Sensor data has been save to FS: {'v': [19.25, 19.06, 32.77, 8786, 19.18716, 48.60277, 20.67, 1012.999], 't': '2023-11-02 17:41:14'}
+2023-11-02 17:41:14 Sensor data has been stored: {'v': [19.25, 19.06, 32.77, 8786, 19.18716, 48.60277, 20.67, 1012.999], 't': '2023-11-02 17:41:14'}
+2023-11-02 17:41:15 Got request: /bigdisplay
+2023-11-02 17:41:15 Send file header.html
+2023-11-02 17:41:15 Got request: /favicon-32x32.png
+2023-11-02 17:41:15 Send file /favicon-32x32.png
+2023-11-02 17:41:15 Got request: /favicon-32x32.png
+2023-11-02 17:41:15 Send file /favicon-32x32.png
+2023-11-02 17:41:17 Got request: /
+2023-11-02 17:41:17 Send file header.html
+2023-11-02 17:41:17 Send file main.html
+2023-11-02 17:41:17 Got request: /favicon-32x32.png
+2023-11-02 17:41:17 Send file /favicon-32x32.png
+2023-11-02 17:41:27 Aquire data from sensors...
+2023-11-02 17:41:30 Memory free: 72064 diff: -384
+2023-11-02 17:41:30 Sensor data has been stored: {'v': [19.25, 19.12, 32.75, 8978, 19.16981, 48.804, 20.65, 1012.982], 't': '2023-11-02 17:41:30'}
+2023-11-02 17:41:30 Got request: /longtermdata.txt
+2023-11-02 17:41:30 Got request: /favicon.ico
+2023-11-02 17:41:30 Send file /favicon.ico
+2023-11-02 17:41:34 Got request: /chart.html?f=longtermdata.txt
+2023-11-02 17:41:34 Send file header.html
+2023-11-02 17:41:34 Send file /chart.html
+2023-11-02 17:41:34 Got request: /longtermdata.txt
+2023-11-02 17:41:35 Got request: /favicon-32x32.png
+2023-11-02 17:41:35 Send file /favicon-32x32.png
+2023-11-02 17:41:41 Got request: /
+2023-11-02 17:41:41 Send file header.html
+2023-11-02 17:41:41 Send file main.html
+2023-11-02 17:41:41 Got request: /favicon-32x32.png
+2023-11-02 17:41:41 Send file /favicon-32x32.png
+2023-11-02 17:41:43 Aquire data from sensors...
+2023-11-02 17:41:46 Memory free: 72064 diff: 0
+2023-11-02 17:41:46 Sensor data has been stored: {'v': [19.25, 19.12, 32.75, 8834, 19.17858, 48.76289, 20.66, 1012.984], 't': '2023-11-02 17:41:46'}
+2023-11-02 17:41:46 Got request: /log.txt
+2023-11-02 17:41:46 Send file /log.txt
+2023-11-02 17:41:59 Aquire data from sensors...
+2023-11-02 17:42:02 Memory free: 70832 diff: -1232
+2023-11-02 17:42:02 Sensor data has been stored: {'v': [19.25, 19.12, 32.72, 8850, 19.18354, 48.71988, 20.68, 1013.008], 't': '2023-11-02 17:42:02'}
+2023-11-02 17:42:04 Got request: /chart.html?f=shorttermdata.txt
+2023-11-02 17:42:04 Send file header.html
+2023-11-02 17:42:04 Send file /chart.html
+2023-11-02 17:42:05 Got request: /shorttermdata.txt
+2023-11-02 17:42:05 Got request: /favicon-32x32.png
+2023-11-02 17:42:05 Send file /favicon-32x32.png
+2023-11-02 17:42:09 Got request: /
+2023-11-02 17:42:10 Send file header.html
+2023-11-02 17:42:10 Send file main.html
+2023-11-02 17:42:10 Got request: /favicon-32x32.png
+2023-11-02 17:42:10 Send file /favicon-32x32.png
+2023-11-02 17:42:14 Got request: /bigdisplay
+2023-11-02 17:42:14 Send file header.html
+2023-11-02 17:42:14 Got request: /favicon-32x32.png
+2023-11-02 17:42:14 Send file /favicon-32x32.png
+2023-11-02 17:42:15 Aquire data from sensors...
+2023-11-02 17:42:18 Memory free: 71824 diff: 992
+2023-11-02 17:42:18 Sensor data has been stored: {'v': [19.25, 19.12, 32.72, 8850, 19.1412, 48.92054, 20.62, 1012.998], 't': '2023-11-02 17:42:18'}
+2023-11-02 17:42:24 Got request: /bigdisplay
+2023-11-02 17:42:24 Send file header.html
+2023-11-02 17:42:25 Got request: /favicon-32x32.png
+2023-11-02 17:42:25 Send file /favicon-32x32.png
+2023-11-02 17:42:26 Got request: /favicon-32x32.png
+2023-11-02 17:42:26 Send file /favicon-32x32.png
+2023-11-02 17:42:31 Aquire data from sensors...
+2023-11-02 17:42:34 Memory free: 71584 diff: -240
+2023-11-02 17:42:34 Sensor data has been stored: {'v': [19.25, 19.12, 32.75, 8850, 19.09008, 49.15886, 20.58, 1012.998], 't': '2023-11-02 17:42:34'}
+2023-11-02 17:42:34 Got request: /
+2023-11-02 17:42:34 Send file header.html
+2023-11-02 17:42:34 Send file main.html
+2023-11-02 17:42:34 Got request: /favicon-32x32.png
+2023-11-02 17:42:35 Send file /favicon-32x32.png
+2023-11-02 17:42:39 Got request: /restart
+2023-11-02 17:42:39 Resetting controller...
 2021-01-01 00:00:04 ############ EnvPlat is starting ############
 2021-01-01 00:00:04 OLED 1306 display found and initialized
 2021-01-01 00:00:04 DS18B20 Sensor found: 28cd215704e13c92
 2021-01-01 00:00:04 DS18B20 Sensor found: 2849675704e13cd1
-2021-01-01 00:00:04 Loaded data file shorttermdata.txt with 32 data rows
-2021-01-01 00:00:05 Loaded data file midtermdata.txt with 11 data rows
-2021-01-01 00:00:05 Loaded data file longtermdata.txt with 6 data rows
-2021-01-01 00:00:06 Keyboard interupt
-2021-01-01 00:00:06 No connection to close
-2023-11-01 14:37:01 ############ EnvPlat is starting ############
-2023-11-01 14:37:01 OLED 1306 display found and initialized
-2023-11-01 14:37:01 DS18B20 Sensor found: 28cd215704e13c92
-2023-11-01 14:37:01 DS18B20 Sensor found: 2849675704e13cd1
-2023-11-01 14:37:01 Loaded data file shorttermdata.txt with 32 data rows
-2023-11-01 14:37:01 Loaded data file midtermdata.txt with 11 data rows
-2023-11-01 14:37:01 Loaded data file longtermdata.txt with 6 data rows
-2023-11-01 14:37:03 Waiting for connection... 1
-2023-11-01 14:37:04 Waiting for connection... 2
-2023-11-01 14:37:05 Waiting for connection... 3
-2023-11-01 14:37:06 Waiting for connection... 4
-2023-11-01 14:37:08 Waiting for connection... 5
-2023-11-01 14:37:09 Wifi Connected on address: 192.168.1.240
-2023-11-01 14:37:09 RTC time: (2023, 11, 1, 2, 14, 37, 9, 0)
-2023-11-01 14:37:09 No need to get time from NTP...
-2023-11-01 14:37:09 Set watchdog with 8s timeout
-2023-11-01 14:37:09 Start data collection thread
-2023-11-01 14:37:09 Data collection thread has started
-2023-11-01 14:37:10 Open network socket
-2023-11-01 14:37:10 Accept web requests
-2023-11-01 14:37:11 Sensor data has been stored: {'v': [18.94, 18.5, 32.85, 5393, 18.10551, 54.17852, 19.6, 998.5736], 't': '2023-11-01 14:37:11'}
-2023-11-01 14:37:12 Got request: /site.webmanifest
-2023-11-01 14:37:13 Send file /site.webmanifest
-2023-11-01 14:37:13 Unable to send file /site.webmanifest: memory allocation failed, allocating 4097 bytes
-2023-11-01 14:37:21 Got request: /
-2023-11-01 14:37:21 Send file header.html
-2023-11-01 14:37:21 Unable to send file header.html: memory allocation failed, allocating 4097 bytes
-2023-11-01 14:37:21 Send file main.html
-2023-11-01 14:37:21 Unable to send file main.html: memory allocation failed, allocating 4097 bytes
-2023-11-01 14:37:21 Got request: /
-2023-11-01 14:37:22 Send file header.html
-2023-11-01 14:37:22 Unable to clear OLED: [Errno 110] ETIMEDOUT
-2023-11-01 14:37:22 Unable to send file header.html: memory allocation failed, allocating 4097 bytes
-2023-11-01 14:37:22 Unable to print to OLED: At: 14:37:22
-2023-11-01 14:37:22 Send file main.html
-2023-11-01 14:37:22 Unable to send file main.html: memory allocation failed, allocating 4097 bytes
-2023-11-01 14:37:22 Unable to print to OLED: T: 18.94 18.62
-2023-11-01 14:37:22 Sensor data has been stored: {'v': [18.94, 18.62, 32.8, 5041, 18.09464, 54.09679, 19.58, 998.5634], 't': '2023-11-01 14:37:22'}
-2023-11-01 14:37:26 Keyboard interupt
-2023-11-01 14:37:26 Connection closed
-2021-01-01 00:00:04 ############ EnvPlat is starting ############
-2021-01-01 00:00:04 OLED 1306 display found and initialized
-2021-01-01 00:00:04 DS18B20 Sensor found: 28cd215704e13c92
-2021-01-01 00:00:04 DS18B20 Sensor found: 2849675704e13cd1
-2021-01-01 00:00:04 Loaded data file shorttermdata.txt with 32 data rows
-2021-01-01 00:00:04 Loaded data file midtermdata.txt with 11 data rows
-2021-01-01 00:00:05 Loaded data file longtermdata.txt with 6 data rows
-2021-01-01 00:00:07 Waiting for connection... 1
-2021-01-01 00:00:08 Waiting for connection... 2
-2021-01-01 00:00:09 Waiting for connection... 3
-2021-01-01 00:00:10 Wifi Connected on address: 192.168.1.240
-2021-01-01 00:00:10 RTC time: (2021, 1, 1, 4, 0, 0, 10, 0)
-2021-01-01 00:00:10 Attempt to get time from pool.ntp.org
-2023-11-01 14:38:08 Clock set from NTP at pool.ntp.org, time is: 14:38:08
-2023-11-01 14:38:09 Set watchdog with 8s timeout
-2023-11-01 14:38:09 Start data collection thread
-2023-11-01 14:38:09 Data collection thread has started
-2023-11-01 14:38:09 Keyboard interupt
-2021-01-01 00:00:04 ############ EnvPlat is starting ############
-2021-01-01 00:00:04 OLED 1306 display found and initialized
-2021-01-01 00:00:04 DS18B20 Sensor found: 28cd215704e13c92
-2021-01-01 00:00:04 DS18B20 Sensor found: 2849675704e13cd1
-2021-01-01 00:00:04 Loaded data file shorttermdata.txt with 32 data rows
-2021-01-01 00:00:05 Loaded data file midtermdata.txt with 11 data rows
-2021-01-01 00:00:05 Loaded data file longtermdata.txt with 6 data rows
+2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 109 data rows
+2021-01-01 00:00:05 Loaded data file midtermdata.txt with 22 data rows
+2021-01-01 00:00:05 Loaded data file longtermdata.txt with 16 data rows
 2021-01-01 00:00:07 Waiting for connection... 1
 2021-01-01 00:00:08 Waiting for connection... 2
 2021-01-01 00:00:09 Waiting for connection... 3
 2021-01-01 00:00:10 Keyboard interupt
 2021-01-01 00:00:10 No connection to close
-2023-11-01 14:40:28 ############ EnvPlat is starting ############
-2023-11-01 14:40:28 OLED 1306 display found and initialized
-2023-11-01 14:40:28 DS18B20 Sensor found: 28cd215704e13c92
-2023-11-01 14:40:28 DS18B20 Sensor found: 2849675704e13cd1
-2023-11-01 14:40:28 Loaded data file shorttermdata.txt with 32 data rows
-2023-11-01 14:40:28 Loaded data file midtermdata.txt with 11 data rows
-2023-11-01 14:40:28 Loaded data file longtermdata.txt with 6 data rows
-2023-11-01 14:40:30 Wifi Connected on address: 192.168.1.240
-2023-11-01 14:40:31 RTC time: (2023, 11, 1, 2, 14, 40, 31, 0)
-2023-11-01 14:40:31 No need to get time from NTP...
-2023-11-01 14:40:31 Set watchdog with 8s timeout
-2023-11-01 14:40:31 Start data collection thread
-2023-11-01 14:40:31 Data collection thread has started
-2023-11-01 14:40:32 Open network socket
-2023-11-01 14:40:32 Accept web requests
-2023-11-01 14:40:33 Sensor data has been stored: {'v': [18.88, 18.5, 32.77, 6209, 18.00518, 54.16155, 19.49, 998.5314], 't': '2023-11-01 14:40:33'}
-2023-11-01 14:40:44 Sensor data has been stored: {'v': [18.88, 18.56, 32.87, 5089, 17.9882, 54.31376, 19.49, 998.5441], 't': '2023-11-01 14:40:44'}
-2023-11-01 14:40:54 Sensor data has been stored: {'v': [18.94, 18.62, 32.89, 5025, 18.01338, 54.28696, 19.5, 998.5262], 't': '2023-11-01 14:40:54'}
-2023-11-01 14:41:04 Sensor data has been stored: {'v': [18.94, 18.62, 32.87, 4993, 18.00327, 54.20151, 19.5, 998.5457], 't': '2023-11-01 14:41:04'}
-2023-11-01 14:41:15 Sensor data has been stored: {'v': [18.88, 18.62, 32.87, 6177, 18.01224, 54.20294, 19.5, 998.5457], 't': '2023-11-01 14:41:15'}
-2023-11-01 14:41:25 Sensor data has been stored: {'v': [18.88, 18.62, 32.82, 4945, 18.00556, 54.20904, 19.48, 998.5097], 't': '2023-11-01 14:41:25'}
-2023-11-01 14:41:36 Sensor data has been stored: {'v': [18.94, 18.56, 32.85, 4897, 17.98267, 54.10109, 19.47, 998.5083], 't': '2023-11-01 14:41:36'}
-2023-11-01 14:41:46 Sensor data has been stored: {'v': [18.94, 18.62, 32.8, 5329, 17.98725, 54.23241, 19.46, 998.5201], 't': '2023-11-01 14:41:46'}
-2023-11-01 14:41:56 Sensor data has been stored: {'v': [18.88, 18.62, 32.89, 5921, 18.00003, 54.33846, 19.48, 998.5366], 't': '2023-11-01 14:41:56'}
-2023-11-01 14:42:07 Sensor data has been stored: {'v': [18.94, 18.56, 33.02, 5041, 17.99812, 54.24471, 19.49, 998.5239], 't': '2023-11-01 14:42:07'}
-2023-11-01 14:42:17 Sensor data has been stored: {'v': [18.88, 18.56, 32.82, 5089, 17.98496, 54.212, 19.48, 998.5225], 't': '2023-11-01 14:42:17'}
-2023-11-01 14:42:27 Sensor data has been stored: {'v': [18.88, 18.62, 32.87, 4961, 18.00327, 54.11682, 19.47, 998.5209], 't': '2023-11-01 14:42:27'}
-2023-11-01 14:42:28 Got request: /site.webmanifest
-2023-11-01 14:42:28 Send file /site.webmanifest
-2023-11-01 14:42:29 Got request: /
-2023-11-01 14:42:29 Send file header.html
-2023-11-01 14:42:29 Send file main.html
-2023-11-01 14:42:38 Sensor data has been stored: {'v': [18.94, 18.62, 32.87, 4993, 17.98992, 54.1687, 19.47, 998.5083], 't': '2023-11-01 14:42:38'}
-2023-11-01 14:42:38 Got request: /restart
-2023-11-01 14:42:38 Resetting controller...

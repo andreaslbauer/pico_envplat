@@ -21,6 +21,7 @@ def connect():
     # attempt until we are connected
     while status == False:
         wlan = network.WLAN(network.STA_IF)
+        wlan.config(pm = 0x111022)
         #wlan.disconnect()
         wlan.active(True)
         sleep(2)
@@ -48,7 +49,7 @@ def open_socket(ip):
     address = (ip, 80)
     connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     connection.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    #connection.settimeout(10.0)
+    connection.settimeout(3.0)
     connection.bind(address)
     connection.listen(3)
     return connection
