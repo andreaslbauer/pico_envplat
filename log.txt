@@ -1,248 +1,63 @@
-2023-11-02 18:01:21 ############ EnvPlat is starting ############
-2023-11-02 18:01:21 OLED 1306 display found and initialized
-2023-11-02 18:01:21 DS18B20 Sensor found: 28cd215704e13c92
-2023-11-02 18:01:21 DS18B20 Sensor found: 2849675704e13cd1
-2023-11-02 18:01:22 Loaded data file shorttermdata.txt with 120 data rows
-2023-11-02 18:01:22 Loaded data file midtermdata.txt with 25 data rows
-2023-11-02 18:01:22 Loaded data file longtermdata.txt with 19 data rows
-2023-11-02 18:01:24 Waiting for connection... 1
-2023-11-02 18:01:25 Waiting for connection... 2
-2023-11-02 18:01:26 Waiting for connection... 3
-2023-11-02 18:01:27 Waiting for connection... 4
-2023-11-02 18:01:28 Waiting for connection... 5
-2023-11-02 18:01:29 Waiting for connection... 6
-2023-11-02 18:01:30 Waiting for connection... 7
-2023-11-02 18:01:31 Waiting for connection... 8
-2023-11-02 18:01:32 Waiting for connection... 9
-2023-11-02 18:01:35 Waiting for connection... 1
-2023-11-02 18:01:37 Waiting for connection... 2
-2023-11-02 18:01:38 Waiting for connection... 3
-2023-11-02 18:01:39 Waiting for connection... 4
-2023-11-02 18:01:40 Waiting for connection... 5
-2023-11-02 18:01:41 Waiting for connection... 6
-2023-11-02 18:01:42 Waiting for connection... 7
-2023-11-02 18:01:43 Waiting for connection... 8
-2023-11-02 18:01:44 Waiting for connection... 9
-2023-11-02 18:01:47 Wifi Connected on address: 192.168.1.240
-2023-11-02 18:01:47 RTC time: (2023, 11, 2, 3, 18, 1, 47, 0)
-2023-11-02 18:01:47 No need to get time from NTP...
-2023-11-02 18:01:47 Set watchdog with 8s timeout
-2023-11-02 18:01:47 Start data collection thread
-2023-11-02 18:01:47 Open network socket
-2023-11-02 18:01:47 Accept web requests
-2023-11-02 18:01:54 Sensor data has been save to FS: {'v': [19.19, 19.0, 32.7, 8994, 19.0897, 48.54326, 20.58, 1013.085], 't': '2023-11-02 18:01:54'}
-2023-11-02 18:02:07 Keyboard interupt
-2023-11-02 18:02:22 ############ EnvPlat is starting ############
-2023-11-02 18:02:22 OLED 1306 display found and initialized
-2023-11-02 18:02:22 DS18B20 Sensor found: 28cd215704e13c92
-2023-11-02 18:02:22 DS18B20 Sensor found: 2849675704e13cd1
-2023-11-02 18:02:22 Loaded data file shorttermdata.txt with 120 data rows
-2023-11-02 18:02:23 Loaded data file midtermdata.txt with 26 data rows
-2023-11-02 18:02:23 Loaded data file longtermdata.txt with 20 data rows
-2023-11-02 18:02:25 Waiting for connection... 1
-2023-11-02 18:02:26 Waiting for connection... 2
-2023-11-02 18:02:27 Waiting for connection... 3
-2023-11-02 18:02:28 Waiting for connection... 4
-2023-11-02 18:02:29 Waiting for connection... 5
-2023-11-02 18:02:30 Waiting for connection... 6
-2023-11-02 18:02:31 Waiting for connection... 7
-2023-11-02 18:02:32 Waiting for connection... 8
-2023-11-02 18:02:34 Waiting for connection... 9
-2023-11-02 18:02:37 Waiting for connection... 1
-2023-11-02 18:02:38 Waiting for connection... 2
-2023-11-02 18:02:39 Waiting for connection... 3
-2023-11-02 18:02:40 Waiting for connection... 4
-2023-11-02 18:02:41 Waiting for connection... 5
-2023-11-02 18:02:42 Waiting for connection... 6
-2023-11-02 18:02:43 Waiting for connection... 7
-2023-11-02 18:02:44 Waiting for connection... 8
-2023-11-02 18:02:45 Waiting for connection... 9
-2023-11-02 18:02:48 Wifi Connected on address: 192.168.1.240
-2023-11-02 18:02:48 RTC time: (2023, 11, 2, 3, 18, 2, 48, 0)
-2023-11-02 18:02:48 No need to get time from NTP...
-2023-11-02 18:02:49 Set watchdog with 8s timeout
-2023-11-02 18:02:49 Start data collection thread
-2023-11-02 18:02:49 Open network socket
-2023-11-02 18:02:49 Accept web requests
-2023-11-02 18:02:56 Sensor data has been save to FS: {'v': [19.25, 19.0, 32.77, 8994, 18.99872, 48.6474, 20.5, 1013.127], 't': '2023-11-02 18:02:55'}
-2023-11-02 18:03:06 Keyboard interupt
+2023-11-03 09:01:17 ############ EnvPlat is starting ############
+2023-11-03 09:01:17 OLED 1306 display found and initialized
+2023-11-03 09:01:17 DS18B20 Sensor found: 28cd215704e13c92
+2023-11-03 09:01:17 DS18B20 Sensor found: 2849675704e13cd1
+2023-11-03 09:01:18 Loaded data file shorttermdata.txt with 236 data rows
+2023-11-03 09:01:18 Loaded data file midtermdata.txt with 43 data rows
+2023-11-03 09:01:18 Loaded data file longtermdata.txt with 28 data rows
+2023-11-03 09:01:20 Waiting for connection... 1
+2023-11-03 09:01:21 Waiting for connection... 2
+2023-11-03 09:01:22 Waiting for connection... 3
+2023-11-03 09:01:23 Waiting for connection... 4
+2023-11-03 09:01:24 Waiting for connection... 5
+2023-11-03 09:01:25 Waiting for connection... 6
+2023-11-03 09:01:26 Waiting for connection... 7
+2023-11-03 09:01:28 Waiting for connection... 8
+2023-11-03 09:01:29 Waiting for connection... 9
+2023-11-03 09:01:32 Waiting for connection... 1
+2023-11-03 09:01:33 Waiting for connection... 2
+2023-11-03 09:01:34 Waiting for connection... 3
+2023-11-03 09:01:35 Waiting for connection... 4
+2023-11-03 09:01:36 Waiting for connection... 5
+2023-11-03 09:01:37 Waiting for connection... 6
+2023-11-03 09:01:38 Waiting for connection... 7
+2023-11-03 09:01:39 Waiting for connection... 8
+2023-11-03 09:01:40 Waiting for connection... 9
+2023-11-03 09:01:43 Wifi Connected on address: 192.168.1.240
+2023-11-03 09:01:43 RTC time: (2023, 11, 3, 4, 9, 1, 43, 0)
+2023-11-03 09:01:43 No need to get time from NTP...
+2023-11-03 09:01:44 Set watchdog with 8s timeout
+2023-11-03 09:01:44 Start data collection thread
+2023-11-03 09:01:44 Open network socket
+2023-11-03 09:01:44 Accept web requests
+2023-11-03 09:01:51 Sensor data has been save to FS: {'v': [16.31, 15.88, 32.67, 2208, 16.80717, 50.25492, 18.33, 1014.225], 't': '2023-11-03 09:01:50'}
+2023-11-03 09:02:19 Keyboard interupt
+2023-11-03 09:02:19 Connection closed
 2021-01-01 00:00:04 ############ EnvPlat is starting ############
 2021-01-01 00:00:04 OLED 1306 display found and initialized
 2021-01-01 00:00:04 DS18B20 Sensor found: 28cd215704e13c92
-2021-01-01 00:00:04 DS18B20 Sensor found: 2849675704e13cd1
-2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 120 data rows
-2021-01-01 00:00:05 Loaded data file midtermdata.txt with 27 data rows
-2021-01-01 00:00:05 Loaded data file longtermdata.txt with 21 data rows
-2021-01-01 00:00:06 Keyboard interupt
-2023-11-02 18:03:31 ############ EnvPlat is starting ############
-2023-11-02 18:03:31 OLED 1306 display found and initialized
-2023-11-02 18:03:31 DS18B20 Sensor found: 28cd215704e13c92
-2023-11-02 18:03:31 DS18B20 Sensor found: 2849675704e13cd1
-2023-11-02 18:03:31 Loaded data file shorttermdata.txt with 120 data rows
-2023-11-02 18:03:31 Loaded data file midtermdata.txt with 27 data rows
-2023-11-02 18:03:31 Loaded data file longtermdata.txt with 21 data rows
-2023-11-02 18:03:34 Waiting for connection... 1
-2023-11-02 18:03:35 Waiting for connection... 2
-2023-11-02 18:03:36 Waiting for connection... 3
-2023-11-02 18:03:37 Waiting for connection... 4
-2023-11-02 18:03:38 Wifi Connected on address: 192.168.1.240
-2023-11-02 18:03:38 RTC time: (2023, 11, 2, 3, 18, 3, 38, 0)
-2023-11-02 18:03:38 No need to get time from NTP...
-2023-11-02 18:03:38 Set watchdog with 8s timeout
-2023-11-02 18:03:38 Start data collection thread
-2023-11-02 18:03:38 Open network socket
-2023-11-02 18:03:38 Accept web requests
-2023-11-02 18:03:45 Sensor data has been save to FS: {'v': [19.25, 19.0, 32.75, 8978, 18.96305, 48.69213, 20.47, 1013.128], 't': '2023-11-02 18:03:45'}
-2023-11-02 18:03:45 Got request: /bigdisplay
-2023-11-02 18:03:45 Got request: /favicon.ico
-2023-11-02 18:03:52 Got request: /chart.html?f=shorttermdata.txt
-2023-11-02 18:04:01 Got request: /restart
-2023-11-02 18:04:01 Resetting controller...
-2023-11-02 18:05:11 ############ EnvPlat is starting ############
-2023-11-02 18:05:11 OLED 1306 display found and initialized
-2023-11-02 18:05:11 DS18B20 Sensor found: 28cd215704e13c92
-2023-11-02 18:05:11 DS18B20 Sensor found: 2849675704e13cd1
-2023-11-02 18:05:12 Loaded data file shorttermdata.txt with 120 data rows
-2023-11-02 18:05:12 Loaded data file midtermdata.txt with 28 data rows
-2023-11-02 18:05:12 Loaded data file longtermdata.txt with 22 data rows
-2023-11-02 18:05:14 Waiting for connection... 1
-2023-11-02 18:05:15 Waiting for connection... 2
-2023-11-02 18:05:16 Waiting for connection... 3
-2023-11-02 18:05:17 Wifi Connected on address: 192.168.1.240
-2023-11-02 18:05:18 RTC time: (2023, 11, 2, 3, 18, 5, 18, 0)
-2023-11-02 18:05:18 No need to get time from NTP...
-2023-11-02 18:05:18 Set watchdog with 8s timeout
-2023-11-02 18:05:18 Start data collection thread
-2023-11-02 18:05:18 Open network socket
-2023-11-02 18:05:18 Accept web requests
-2023-11-02 18:05:25 Sensor data has been save to FS: {'v': [19.25, 19.06, 32.77, 8994, 18.92891, 48.88964, 20.44, 1013.164], 't': '2023-11-02 18:05:24'}
-2023-11-02 18:05:47 Got request: /bigdisplay
-2023-11-02 18:06:15 Got request: /restart
-2023-11-02 18:06:15 Resetting controller...
-2023-11-02 18:06:35 ############ EnvPlat is starting ############
-2023-11-02 18:06:35 OLED 1306 display found and initialized
-2023-11-02 18:06:35 DS18B20 Sensor found: 28cd215704e13c92
-2023-11-02 18:06:35 DS18B20 Sensor found: 2849675704e13cd1
-2023-11-02 18:06:35 Loaded data file shorttermdata.txt with 120 data rows
-2023-11-02 18:06:36 Loaded data file midtermdata.txt with 29 data rows
-2023-11-02 18:06:36 Loaded data file longtermdata.txt with 23 data rows
-2023-11-02 18:06:38 Waiting for connection... 1
-2023-11-02 18:06:39 Waiting for connection... 2
-2023-11-02 18:06:40 Waiting for connection... 3
-2023-11-02 18:06:41 Waiting for connection... 4
-2023-11-02 18:06:42 Waiting for connection... 5
-2023-11-02 18:06:43 Waiting for connection... 6
-2023-11-02 18:06:45 Waiting for connection... 7
-2023-11-02 18:06:46 Waiting for connection... 8
-2023-11-02 18:06:47 Waiting for connection... 9
-2023-11-02 18:06:50 Waiting for connection... 1
-2023-11-02 18:06:51 Waiting for connection... 2
-2023-11-02 18:06:52 Waiting for connection... 3
-2023-11-02 18:06:53 Waiting for connection... 4
-2023-11-02 18:06:54 Waiting for connection... 5
-2023-11-02 18:06:55 Waiting for connection... 6
-2023-11-02 18:06:56 Waiting for connection... 7
-2023-11-02 18:06:57 Waiting for connection... 8
-2023-11-02 18:06:58 Waiting for connection... 9
-2023-11-02 18:07:01 Wifi Connected on address: 192.168.1.240
-2023-11-02 18:07:02 RTC time: (2023, 11, 2, 3, 18, 7, 2, 0)
-2023-11-02 18:07:02 No need to get time from NTP...
-2023-11-02 18:07:02 Set watchdog with 8s timeout
-2023-11-02 18:07:02 Start data collection thread
-2023-11-02 18:07:02 Open network socket
-2023-11-02 18:07:02 Accept web requests
-2023-11-02 18:07:09 Sensor data has been save to FS: {'v': [19.25, 19.06, 32.89, 8930, 18.85624, 49.04652, 20.33, 1013.174], 't': '2023-11-02 18:07:08'}
-2023-11-02 18:07:11 Keyboard interupt
-2023-11-02 18:07:27 ############ EnvPlat is starting ############
-2023-11-02 18:07:27 OLED 1306 display found and initialized
-2023-11-02 18:07:27 DS18B20 Sensor found: 28cd215704e13c92
-2023-11-02 18:07:27 DS18B20 Sensor found: 2849675704e13cd1
-2023-11-02 18:07:28 Loaded data file shorttermdata.txt with 120 data rows
-2023-11-02 18:07:28 Loaded data file midtermdata.txt with 30 data rows
-2023-11-02 18:07:28 Loaded data file longtermdata.txt with 24 data rows
-2023-11-02 18:07:30 Waiting for connection... 1
-2023-11-02 18:07:31 Waiting for connection... 2
-2023-11-02 18:07:32 Waiting for connection... 3
-2023-11-02 18:07:33 Wifi Connected on address: 192.168.1.240
-2023-11-02 18:07:33 RTC time: (2023, 11, 2, 3, 18, 7, 33, 0)
-2023-11-02 18:07:34 No need to get time from NTP...
-2023-11-02 18:07:34 Set watchdog with 8s timeout
-2023-11-02 18:07:34 Start data collection thread
-2023-11-02 18:07:34 Open network socket
-2023-11-02 18:07:34 Accept web requests
-2023-11-02 18:07:41 Sensor data has been save to FS: {'v': [19.25, 19.06, 32.8, 8914, 18.81618, 49.09163, 20.29, 1013.188], 't': '2023-11-02 18:07:40'}
-2023-11-02 18:07:41 Got request: /
-2023-11-02 18:07:41 Got request: /favicon-32x32.png
-2023-11-02 18:07:45 Got request: /log.txt
-2023-11-02 18:07:59 Got request: /bigdisplay
-2023-11-02 18:07:59 Got request: /favicon-32x32.png
-2023-11-02 18:08:03 Got request: /chart.html?f=shorttermdata.txt
-2023-11-02 18:08:03 Got request: /shorttermdata.txt
-2023-11-02 18:08:04 Got request: /favicon-32x32.png
-2023-11-02 18:08:17 Got request: /
-2023-11-02 18:08:17 Got request: /favicon-32x32.png
-2023-11-02 18:08:19 Got request: /stats
-2023-11-02 18:08:19 Got request: /favicon-32x32.png
-2023-11-02 18:08:20 Got request: /
-2023-11-02 18:08:20 Got request: /favicon-32x32.png
-2023-11-02 18:08:22 Got request: /shorttermdata.txt
-2023-11-02 18:08:31 Got request: /restart
-2023-11-02 18:08:31 Resetting controller...
-2021-01-01 00:00:04 ############ EnvPlat is starting ############
-2021-01-01 00:00:04 OLED 1306 display found and initialized
-2021-01-01 00:00:04 DS18B20 Sensor found: 28cd215704e13c92
-2021-01-01 00:00:04 DS18B20 Sensor found: 2849675704e13cd1
-2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 120 data rows
-2021-01-01 00:00:05 Loaded data file midtermdata.txt with 31 data rows
-2021-01-01 00:00:05 Loaded data file longtermdata.txt with 25 data rows
-2021-01-01 00:00:07 Waiting for connection... 1
-2021-01-01 00:00:08 Waiting for connection... 2
-2021-01-01 00:00:09 Waiting for connection... 3
-2021-01-01 00:00:10 Waiting for connection... 4
-2021-01-01 00:00:11 Waiting for connection... 5
-2021-01-01 00:00:13 Wifi Connected on address: 192.168.1.240
-2021-01-01 00:00:13 RTC time: (2021, 1, 1, 4, 0, 0, 13, 0)
-2021-01-01 00:00:13 Attempt to get time from pool.ntp.org
-2023-11-02 18:09:13 Clock set from NTP at pool.ntp.org, time is: 18:09:13
-2023-11-02 18:09:14 Set watchdog with 8s timeout
-2023-11-02 18:09:14 Start data collection thread
-2023-11-02 18:09:14 Open network socket
-2023-11-02 18:09:14 Accept web requests
-2023-11-02 18:09:20 Sensor data has been save to FS: {'v': [19.25, 19.06, 32.75, 8978, 18.87226, 49.36199, 20.35, 1013.184], 't': '2023-11-02 18:09:20'}
-2023-11-02 18:10:34 Keyboard interupt
-2021-01-01 00:00:04 ############ EnvPlat is starting ############
-2021-01-01 00:00:04 OLED 1306 display found and initialized
-2021-01-01 00:00:04 DS18B20 Sensor found: 28cd215704e13c92
-2021-01-01 00:00:04 DS18B20 Sensor found: 2849675704e13cd1
-2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 120 data rows
-2021-01-01 00:00:05 Loaded data file midtermdata.txt with 32 data rows
-2021-01-01 00:00:05 Loaded data file longtermdata.txt with 26 data rows
-2021-01-01 00:00:07 Waiting for connection... 1
-2021-01-01 00:00:08 Waiting for connection... 2
-2021-01-01 00:00:09 Waiting for connection... 3
-2021-01-01 00:00:10 Waiting for connection... 4
-2021-01-01 00:00:11 Waiting for connection... 5
+2021-01-01 00:00:05 DS18B20 Sensor found: 2849675704e13cd1
+2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 237 data rows
+2021-01-01 00:00:05 Loaded data file midtermdata.txt with 44 data rows
+2021-01-01 00:00:05 Loaded data file longtermdata.txt with 29 data rows
+2021-01-01 00:00:08 Waiting for connection... 1
+2021-01-01 00:00:09 Waiting for connection... 2
+2021-01-01 00:00:10 Waiting for connection... 3
+2021-01-01 00:00:11 Waiting for connection... 4
 2021-01-01 00:00:12 Wifi Connected on address: 192.168.1.240
 2021-01-01 00:00:13 RTC time: (2021, 1, 1, 4, 0, 0, 13, 0)
 2021-01-01 00:00:13 Attempt to get time from pool.ntp.org
-2021-01-01 00:00:19 Unable to get time from NTP server: [Errno 110] ETIMEDOUT
-2021-01-01 00:00:20 Attempt to get time from 216.229.4.66
-2023-11-02 18:10:57 Clock set from NTP at 216.229.4.66, time is: 18:10:57
-2023-11-02 18:10:58 Set watchdog with 8s timeout
-2023-11-02 18:10:58 Start data collection thread
-2023-11-02 18:10:58 Open network socket
-2023-11-02 18:10:58 Accept web requests
-2023-11-02 18:11:03 Keyboard interupt
-2023-11-02 18:11:03 Connection closed
+2023-11-03 09:03:00 Clock set from NTP at pool.ntp.org, time is: 09:03:00
+2023-11-03 09:03:01 Set watchdog with 8s timeout
+2023-11-03 09:03:01 Start data collection thread
+2023-11-03 09:03:01 Open network socket
+2023-11-03 09:03:01 Accept web requests
 2021-01-01 00:00:04 ############ EnvPlat is starting ############
 2021-01-01 00:00:04 OLED 1306 display found and initialized
 2021-01-01 00:00:04 DS18B20 Sensor found: 28cd215704e13c92
 2021-01-01 00:00:04 DS18B20 Sensor found: 2849675704e13cd1
-2021-01-01 00:00:04 Loaded data file shorttermdata.txt with 120 data rows
-2021-01-01 00:00:05 Loaded data file midtermdata.txt with 32 data rows
-2021-01-01 00:00:05 Loaded data file longtermdata.txt with 26 data rows
+2021-01-01 00:00:05 Loaded data file shorttermdata.txt with 237 data rows
+2021-01-01 00:00:05 Loaded data file midtermdata.txt with 44 data rows
+2021-01-01 00:00:05 Loaded data file longtermdata.txt with 29 data rows
 2021-01-01 00:00:07 Waiting for connection... 1
-2021-01-01 00:00:08 Waiting for connection... 2
-2021-01-01 00:00:09 Waiting for connection... 3
-2021-01-01 00:00:09 Keyboard interupt
-2021-01-01 00:00:10 No connection to close
+2021-01-01 00:00:07 Keyboard interupt
