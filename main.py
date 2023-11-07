@@ -266,12 +266,12 @@ CPU Temperature: {temperature} <br>
 
 def make_table(dataset):
     try:
-        metrics_labels = ['Temperature', 'Moisture', 'Light']
+        metrics_labels = ['Temperature 1', 'Temperature 2', 'Moisture', 'Light', 'Humidity', 'Pressure', 'Temperature 3', 'Temperature 4']
         data_table = []
         row = ['', 'Current', 'Change/3', 'Change/10', 'Average', 'Minimum', 'Maximum']
         data_table.append(row)
         ratesofchange3 = getRateOfChange(dataset, 3)
-        ratesofchange10 = getRateOfChange(dataset, 10)
+        changes3 = getChanges(dataset, 3)
         
         d_now = dataset.getcurrent()
         d_before = dataset.getNBack(3)
@@ -287,28 +287,25 @@ def make_table(dataset):
         row = ['Time',
                dataset.getcurrent()['t'],
                d3,
-               d10,
+               'N/A',
                'N/A',
                'N/A',
                'N/A']
         data_table.append(row)
         
-        for metrics_idx in range(0, 3):
-            #print(ratesofchange)
-            #print(ratesofchange[metrics_idx])
+        for metrics_idx in range(0, 8):
             row = [metrics_labels[metrics_idx],
-                   dataset.getcurrent()['v'][metrics_idx],
-                   ratesofchange3[metrics_idx],
-                   ratesofchange10[metrics_idx],
-                   dataset.getaverage(metrics_idx),
-                   dataset.getmin(metrics_idx),
-                   dataset.getmax(metrics_idx)]
-            #print(row)
+                   round(dataset.getcurrent()['v'][metrics_idx], 2),
+                   round(ratesofchange3[metrics_idx], 2),
+                   round(changes3[metrics_idx], 2),
+                   round(dataset.getaverage(metrics_idx), 2),
+                   round(dataset.getmin(metrics_idx), 2),
+                   round(dataset.getmax(metrics_idx), 2)]
+            print(row)
             data_table.append(row)
             
     except Exception as e:
         logger.log(f'Failure building data table: {e}')
-
 
     return data_table
 
