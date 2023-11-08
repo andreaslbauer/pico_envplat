@@ -9,6 +9,8 @@
         <td td class=nobr>Light: <b><span id="currentLight"></span></b></td>
         <td td class=nobr>Humidity: <b><span id="currentHumidity"></span></b></td>
         <td td class=nobr>Pressure: <b><span id="currentPressure"></span></b></td>
+        <td td class=nobr>Temp 3: <b><span id="currentTemperature3">12:34:56</span></b></td>
+        <td td class=nobr>Temp 4: <b><span id="currentTemperature4">12:34:56</span></b></td>
     </tr>
 </table>
 
@@ -24,6 +26,10 @@ Humidity
 <div id="chartHumidity"></div>
 Pressure
 <div id="chartPressure"></div>
+Temperature 3
+<div id="chartTemp3"></div>
+Temperature 4
+<div id="chartTemp4"></div>
 
 <script>
 
@@ -93,9 +99,11 @@ fetch(url)
         $('#currentTemperature').html(data[length - 1]['T1'].toFixed(2));
         $('#currentTemperature2').html(data[length - 1]['T2'].toFixed(2));
         $('#currentMoisture').html(data[length - 1]['M']);
-        $('#currentLight').html(data[length - 1]['Li']);
+        $('#currentLight').html(data[length - 1]['L']);
         $('#currentHumidity').html(data[length - 1]['H'].toFixed(1));
         $('#currentPressure').html(data[length - 1]['P'].toFixed(2));
+        $('#currentTemperature3').html(data[length - 1]['T3'].toFixed(2));
+        $('#currentTemperature4').html(data[length - 1]['T4'].toFixed(2));
         
         for (var i = 0; i < length; i++) {
            var obj = data[i];
@@ -138,10 +146,24 @@ fetch(url)
            obj['Value'] = obj['P'];
         }
         drawChart("#chartPressure", data);
-
+        
+        for (var i = 0; i < length; i++) {
+           var obj = data[i];
+           obj['TimeStamp'] = new Date(Date.parse(obj.D));
+           obj['Value'] = obj['T3'];
+        }
+        drawChart("#chartTemp3", data);
+        
+        for (var i = 0; i < length; i++) {
+           var obj = data[i];
+           obj['TimeStamp'] = new Date(Date.parse(obj.D));
+           obj['Value'] = obj['T4'];
+        }
+        drawChart("#chartTemp4", data);
     })
 
 </script>
 
 </body>
 </html>
+
