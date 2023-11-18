@@ -43,11 +43,11 @@ keep_running = True
 sensor_il = interleaver(4)
 savedata_il = interleaver(100)
 shortterm_il = interleaver(2)
-shortterm_rb = persistedringbuffer(240, "shorttermdata.txt")
+shortterm_rb = persistedringbuffer(120, "shorttermdata.txt")
 midterm_il = interleaver(30)
-midterm_rb = persistedringbuffer(240, "midtermdata.txt")
+midterm_rb = persistedringbuffer(120, "midtermdata.txt")
 longterm_il = interleaver(5 * 60)
-longterm_rb = persistedringbuffer(240, "longtermdata.txt")
+longterm_rb = persistedringbuffer(120, "longtermdata.txt")
 
 
 def getTimeSeconds(timestring):
